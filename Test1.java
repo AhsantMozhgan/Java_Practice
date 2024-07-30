@@ -13,5 +13,11 @@ public class Test1 {
         System.out.println(7 /2);               // 3
         System.out.println(7.0 / 2);            // 3.5
         System.out.println((double)7 /2);       // 3.5 (type casting operation)
+
+        byte a = 127;    // no error
+//        byte b = 128;   // error
+
+        long y = 1;      // no error
+//        long y = 1.7;    // error
     }
 }
