@@ -6,10 +6,15 @@ public class PowerCalculation {
         int a = 2;
         int b = 3;
         int counter = 1;
-        for (int i = 1; i <= b; i++) {
+
+        int i;
+        for (i = 1; i <= b; i++) {
             counter = counter * a;
             System.out.println(counter);
         }
+
+        System.out.println(a + " ^ " + b + " = " + counter);
+
 //        rewrite the program using a while loop to calculate 2^3
 //        int a = 2;
 //        int b = 3;
