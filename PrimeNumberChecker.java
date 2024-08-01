@@ -11,7 +11,7 @@ public class PrimeNumberChecker {
             else {
                 boolean isPrime = true;
                 for (int i = 3; i * i <= number && isPrime; i+=2) {  // "isPrime" or "isPrime == true"
-                    System.out.println(i + " ");
+                    System.out.println(i + "    ");
                     if (number % i == 0)
                         isPrime = false;
                 }
