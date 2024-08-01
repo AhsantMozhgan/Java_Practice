@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class AverageCalculator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Please enter some numbers and press enter: ");
+        System.out.println("Please enter some numbers and enter zero: ");
 
         int data;
         data = input.nextInt();
