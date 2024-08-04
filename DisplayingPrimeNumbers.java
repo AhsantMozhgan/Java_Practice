@@ -4,7 +4,7 @@
 public class DisplayingPrimeNumbers {
     public static void main(String[] args) {
         int number = 2;
-        int count = 0;
+        int count = 1;
         while(count < 50) {
             if (number % 2!= 0) {
                 boolean isPrime = true;
