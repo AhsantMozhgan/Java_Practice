@@ -1,5 +1,7 @@
 public class MethodPractice {
-    public static void Sum(int start, int stop) {
+    //    In Java, the conventional naming rule for methods is to use camelCase, where the first
+    //    letter is in lowercase and the first letter of each subsequent word is in uppercase.
+    public static void sum1(int start, int stop) {
         int sum = 0;
         for (int i = start; i <= stop; i++) {
             sum += i;
@@ -9,8 +11,8 @@ public class MethodPractice {
     }
 
     public static void main(String[] args) {
-        Sum(1,10);
-        Sum(11,20);
+        sum1(1,10);
+        sum1(1,20);
 
 
 //        int sum = 0;
