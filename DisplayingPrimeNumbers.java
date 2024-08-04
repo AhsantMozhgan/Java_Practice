@@ -5,7 +5,7 @@ public class DisplayingPrimeNumbers {
     public static void main(String[] args) {
         int number = 2;
         int count = 0;
-        while(count < 10) {
+        while(count < 50) {
             if (number % 2!= 0) {
                 boolean isPrime = true;
                 for (int i = 3; i * i <= number && isPrime; i+=2)
@@ -13,8 +13,10 @@ public class DisplayingPrimeNumbers {
                         isPrime = false;
 
                 if (isPrime) {
-                    System.out.print(number + "   ");
+                    System.out.printf(number + "   ");
                     count++;
+                    if (count % 10 == 0)
+                        System.out.println();
                 }
             }
             number++;
