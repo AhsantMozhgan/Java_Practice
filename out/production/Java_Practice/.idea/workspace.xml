@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95326c6c-6013-434c-ab27-2777c3adf197" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/FinalPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/MyPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/powerMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/powerMethod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

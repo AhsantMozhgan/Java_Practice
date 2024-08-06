@@ -13,10 +13,13 @@ public class powerMethod {
     public static void main(String[] args) {
         int a, b;
         Scanner input = new Scanner(System.in);
+        System.out.print("Enter a base number: ");
         a = input.nextInt();
+
+        System.out.print("Enter a power number: ");
         b = input.nextInt();
 
-        power(2, 3);
+//        int pow = power(a, b);
         System.out.println(a + " ^ " + b + " = " + power(a, b));
     }
 }
