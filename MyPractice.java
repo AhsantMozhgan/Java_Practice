@@ -6,8 +6,14 @@
 //        displays a pyramid, as shown in the following sample run:
 //Enter the number of lines: 7
 
-//        3- (Perfect number) A positive integer is called a perfect number if it is equal to the sum of all of its positive divisors, excluding itself. For example, 6 is the first perfect number, because 6=3+2+1. The next is 28=14+7+4+2+1.
+//        3- (Perfect number) A positive integer is called a perfect number if it is equal to the sum of all of its positive
+//        divisors, excluding itself. For example, 6 is the first perfect number, because 6=3+2+1. The next is 28=14+7+4+2+1.
 //        There are four perfect numbers less than 10000. Write a program to find all these four numbers.
+
+
+//4. (Emirp) An emirp (prime spelled backward) is a non palindromic prime number whose reversal is also a prime.
+// For example, 17 is a prime and 71 is a prime. So,17 and 71 are emirps. Write a program that displays the first 100 emirps.
+// Display 10 numbers per line and align the numbers properly, as follows:
 
 
 public class MyPractice {
