@@ -1,4 +1,4 @@
-// crate power method to write a Java program that calculates 2 to the power of 3
+// create power method to write a Java program that calculates 2 to the power of 3
 // using the variables a and b, and incorporate a counter to keep track of the iterations
 import java.util.Scanner;
 
