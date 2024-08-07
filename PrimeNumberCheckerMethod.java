@@ -1,4 +1,4 @@
-//create PrimeNumber method to check if a number is prime or not
+//create PrimeNumber method to check if a number is prime or not prime
 public class PrimeNumberCheckerMethod {
     public static boolean isPrimeNumber (int number) {
         if (number % 2 == 0)
@@ -21,3 +21,6 @@ public class PrimeNumberCheckerMethod {
         }
     }
 }
+
+// Find 3-digit numbers that are not symmetrical
+
