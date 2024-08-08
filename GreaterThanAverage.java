@@ -1,13 +1,18 @@
+//        Write a program that reads 100 numbers, computes their average,
+//        and find out how many numbers are above the average.
+
+
 import java.util.Scanner;
 
 public class GreaterThanAverage {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("How many numbers do you enter? ");
+        System.out.print("Enter the number of elements: ");
 
         int N = input.nextInt();
         int [] a = new int [N];
 //        int [] a = new int [5];
+        System.out.println("Enter the numbers:");
         int sum = 0;
         for (int i = 0; i < a.length; i ++) {
             a[i] = input.nextInt();
@@ -21,7 +26,7 @@ public class GreaterThanAverage {
             if (a[i] > avg)
                 aboveAverage++;
         }
-        System.out.println("aboveAverage : " + aboveAverage);
+        System.out.println("Number of elements greater than the average: " + aboveAverage);
 
     }
 }
