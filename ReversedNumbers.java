@@ -16,15 +16,6 @@ public class ReversedNumbers {
             a[i] = input.nextInt();
 
         }
-//        double avg = (double) sum / a.length;
-//        System.out.println("average: " + avg);
-//
-//        int aboveAverage = 0;
-//        for (int i = 0; i < a.length; i++) {
-//            if (a[i] > avg)
-//                aboveAverage++;
-//        }
-//        System.out.println("Number of elements greater than the average: " + aboveAverage);
 
         for (int i = a.length - 1; i >= 0; i--)
             System.out.println("   " + a[i]);
