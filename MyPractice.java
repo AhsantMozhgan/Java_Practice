@@ -15,6 +15,7 @@
 // For example, 17 is a prime and 71 is a prime. So,17 and 71 are emirps. Write a program that displays the first 100 emirps.
 // Display 10 numbers per line and align the numbers properly, as follows:
 
+//        Question 1: Write a program that reads 100 numbers, computes their average, and find out how many numbers are above the average.
 
 public class MyPractice {
     public static void main(String[] args) {
