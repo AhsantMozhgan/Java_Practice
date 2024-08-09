@@ -21,10 +21,10 @@ public class FirstIndexOfGreatestElement {
             if (a[i] > a[max_index])
                 max_index = i;
         }
+
         // Enter the number of elements: 4
         // Enter the numbers: 2   6   3   6
         // The greatest element is 6 and its first occurrence is at index 1
-
         System.out.println("The greatest element is " + a[max_index] + " and its first occurrence is at index " + max_index);
     }
 }
