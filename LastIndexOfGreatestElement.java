@@ -1,3 +1,4 @@
+// Find the last index of the greatest element in a list of numbers in Java
 import java.util.Scanner;
 
 public class LastIndexOfGreatestElement {
