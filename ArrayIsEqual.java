@@ -16,7 +16,7 @@ public class ArrayIsEqual {
     public static void main(String[] args) {
         int [] a = { 2, 7, 9, 3, 4};
         int [] b = { 2, 7, 9, 2, 4};
-        System.out.println("Is these two Arrays Equal? " + areEqual(a, b));
+        System.out.println("Are these two Arrays Equal? " + areEqual(a, b));
 
     }
 }
