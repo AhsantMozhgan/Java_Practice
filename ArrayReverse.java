@@ -3,7 +3,8 @@
 
 public class ArrayReverse {
     public static int [] reverse(int [] a) {
-        int[] b = new int [a.length];
+        // sourceArray is 'a' and targetArray is b
+        int[] b = new int [a.length]; // // this is wrong: int [] a = new int[b.length];
 
         for (int i = 0; i < a.length; i++) {
             b [a.length - i - 1] = a [i];
@@ -14,6 +15,7 @@ public class ArrayReverse {
         }
         return b;
     }
+
 
     public static void print(int[] a) {
         System.out.print("[");
