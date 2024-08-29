@@ -5,5 +5,9 @@ public class MainClass {
 
         // this is incorrect because we can not call a constructor more than once
 //        c1.CircleClass();   // Error
+
+        // printing constructor with one parameter
+        CircleClass c2 = new CircleClass(3);
+        System.out.println(c2.radius);
     }
 }
