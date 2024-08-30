@@ -20,4 +20,10 @@ public class CircleClass {
 //        }
 //    }
 
+    // Using getter if we want to know the radius (return the value of radius)
+    int getRadius() {
+        return radius;
+    }
+
+
 }

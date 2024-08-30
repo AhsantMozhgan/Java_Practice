@@ -9,5 +9,8 @@ public class MainClass {
         // printing constructor with one parameter
         CircleClass c2 = new CircleClass(3);
         System.out.println(c2.radius);
+
+        // We just can see the value of radius and we can not change its value
+        System.out.println("Read radius: " + c1.getRadius());
     }
 }
