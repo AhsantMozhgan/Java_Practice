@@ -25,5 +25,11 @@ public class CircleClass {
         return radius;
     }
 
+    void setRadius(int r) {
+        if (r > 0) {
+            radius = r;
+        }
+    }
+
 
 }
