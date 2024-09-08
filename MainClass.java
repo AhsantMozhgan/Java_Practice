@@ -43,6 +43,12 @@ public class MainClass {
             Thread.sleep(1);
             t1.secondIncrement();
 
+
+
+            // t6 is a copy of t5 in a new location
+//            Time t5 = new Time(2, 10, 20);
+//            Time t6 = new Time(t5);
+
         }
     }
 }
