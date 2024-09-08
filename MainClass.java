@@ -1,5 +1,5 @@
 public class MainClass {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         CircleClass c1 = new CircleClass();
 //        System.out.println(c1.radius);
         System.out.println(c1.getRadius());
@@ -25,6 +25,7 @@ public class MainClass {
 
         // Show result for Time class
         Time t1 = new Time();   // by default is midnight 00:00
+        /*
         Time t2 = new Time(7);          // 7 am
         Time t3 = new Time(7, 45);      // 7:45 am
         Time t4 = new Time(7, 45, 12);  // 7:45:12 am
@@ -32,5 +33,13 @@ public class MainClass {
         t2.show();
         t3.show();
         t4.show();
+        */
+
+        while (true) {
+            t1.show();
+            Thread.sleep(1000);
+            t1.secondIncrement();
+
+        }
     }
 }

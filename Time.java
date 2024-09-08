@@ -43,6 +43,19 @@
     }
 
     public void show() {
-        System.out.println();
+        System.out.println(hours + ":" + minutes + ":" + seconds);
     }
+
+    public void secondIncrement() {
+        seconds++;
+        if (seconds == 60) {
+            seconds = 0;
+            minutes++;
+        }
+
+        if (minutes == 60) {
+            minutes = 0;
+            hours++;
+        }
+     }
  }
