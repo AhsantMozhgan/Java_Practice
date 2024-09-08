@@ -29,18 +29,32 @@
         this(h, m, 0);
     }
 
-    // Method with three parameter
-     public Time(int h, int m, int s) {
-        if (0 <= h && h < 24) {
-            hours = h;
-        }
-        if (0 <= m && m < 24) {
-            hours = m;
-        }
-        if (0 <= s && s < 24) {
-            hours = s;
-        }
-    }
+//    // Method with three parameter
+//     public Time(int h, int m, int s) {
+//        if (0 <= h && h < 24) {
+//            hours = h;
+//        }
+//        if (0 <= m && m < 24) {
+//            minutes = m;
+//        }
+//        if (0 <= s && s < 24) {
+//            seconds = s;
+//        }
+//    }
+
+     // using 'this'
+     // Method with three parameter
+     public Time(int hours, int m, int s) {
+         if (0 <= hours && hours < 24) {
+             this. hours = hours;
+         }
+         if (0 <= m && m < 24) {
+             minutes = m;
+         }
+         if (0 <= s && s < 24) {
+             seconds = s;
+         }
+     }
 
     public void show() {
         System.out.println(hours + ":" + minutes + ":" + seconds);

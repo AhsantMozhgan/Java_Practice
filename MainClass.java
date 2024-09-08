@@ -37,7 +37,10 @@ public class MainClass {
 
         while (true) {
             t1.show();
-            Thread.sleep(1000);
+//            Thread.sleep(1000);
+//            Thread.sleep(100);
+//            Thread.sleep(10);
+            Thread.sleep(1);
             t1.secondIncrement();
 
         }
