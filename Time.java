@@ -57,5 +57,8 @@
             minutes = 0;
             hours++;
         }
+        if (hours == 24) {
+            hours = 0;
+        }
      }
  }
