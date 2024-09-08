@@ -28,5 +28,9 @@ public class MainClass {
         Time t2 = new Time(7);          // 7 am
         Time t3 = new Time(7, 45);      // 7:45 am
         Time t4 = new Time(7, 45, 12);  // 7:45:12 am
+        t1.show();
+        t2.show();
+        t3.show();
+        t4.show();
     }
 }

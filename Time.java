@@ -5,6 +5,7 @@
      // "this" usage: for using another constructor inside body of another constructor
     public Time() {
     // we don't need to use "this" because there are no arguments to check
+        // so no need to write 'this(0, 0, 0);'
     }
 
     // Method with one parameter
@@ -41,5 +42,7 @@
         }
     }
 
-
-}
+    public void show() {
+        System.out.println();
+    }
+ }
