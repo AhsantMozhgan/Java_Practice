@@ -56,6 +56,12 @@
          }
      }
 
+     public Time(Time time) {
+         hours = time.hours;
+         minutes = time.minutes;
+         seconds = time.seconds;
+     }
+
     public void show() {
         System.out.println(hours + ":" + minutes + ":" + seconds);
     }
@@ -75,4 +81,6 @@
             hours = 0;
         }
      }
+
+
  }
