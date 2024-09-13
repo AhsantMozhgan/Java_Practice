@@ -78,6 +78,23 @@ public class MainClass {
 //     a1.a = 2;   // error (private access)
      a1.b = 2;    // public access
 //     a1.c = 2;     // error (default access)
+
+
+
+         // Array in object orientation
+//    Circle c1 = new Circle();
+//    Circle c2 = new Circle();
+//    Circle c3 = new Circle();
+         // OR
+         CircleClass[] circles = new CircleClass[3];
+
+         for (int i = 0; i < circles.length; i++) {
+             circles[i] = new CircleClass();
+         }
+
+         for (int i = 0; i < circles.length; i++) {
+             System.out.println(circles[i].getArea());
+         }
     }
 
     public static void change(int a, Test b) { // a is a number and b is an object from Test class
