@@ -50,5 +50,10 @@ public class Main2 {
 
         // Ali = Ali
         System.out.println("Ali and Ali: " + "Ali".compareTo("Ali"));
+
+        // compare with startsWith and endsWith
+        String nameThree = "AliReza";
+        System.out.println("startsWith: " + nameThree.startsWith("Ali"));   // output: true
+        System.out.println("endsWith: " + nameThree.endsWith("Reza"));      // output: true
     }
 }
