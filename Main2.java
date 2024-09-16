@@ -58,5 +58,12 @@ public class Main2 {
 
         // length()
         System.out.println("nameThree length is: " + nameThree.length());
+
+        // charAt(#)
+        String name4 = "Ali Reza";
+        for (int i = 0; i < name4.length(); i++) {
+            System.out.println(name4.charAt(i));
+        }
+
     }
 }
