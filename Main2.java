@@ -77,5 +77,11 @@ public class Main2 {
         String message = "Welcome to Java".substring(0, 11) + "HTML";
         System.out.println(message);
 
+        // toLowerCase
+        System.out.println(name4.toLowerCase());
+
+        // toUpperCase
+        System.out.println(name4.toUpperCase());
+
     }
 }
