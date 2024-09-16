@@ -66,9 +66,16 @@ public class Main2 {
         }
 
         // concat method
-        String name5 = name4.concat(" jan"); // or mor easy way: String name5 = name4 + " jan";
+        String name5 = name4.concat(" jan"); // or more easy way: String name5 = name4 + " jan";
         System.out.println("name is Ali Reza: " + name4);
         System.out.println("concat 'jan' to Ali Reza: " + name5);
+
+        // substring
+        System.out.println(name4.substring(4,7));
+
+        // OR
+        String message = "Welcome to Java".substring(0, 11) + "HTML";
+        System.out.println(message);
 
     }
 }
