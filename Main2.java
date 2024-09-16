@@ -41,8 +41,14 @@ public class Main2 {
         String nameOne = "Ali";
         String nameTwo = new String("Abbas");
 
-        System.out.println(nameOne.compareTo(nameTwo)); // output: 10 (output is a positive number. in here the deference between 'l' and 'b' is 10 characters)
+        System.out.println("Ali and Abbas: " + nameOne.compareTo(nameTwo)); // output: 10 (output is a positive number. in here the deference between 'l' and 'b' is 10 characters)
         // Ali < ali (because The numerical code of lowercase letters is bigger than the numerical code of uppercase letters)
+        System.out.println("Ali and ali: " + "Ali".compareTo("ali"));
+
         // Ali < Ali Reza ( because Ali is the same in both but 'Ali Reza' is bigger because it continues after 'Ali'
+        System.out.println("Ali and Ali Reza: " + "Ali".compareTo("Ali Reza"));
+
+        // Ali = Ali
+        System.out.println("Ali and Ali: " + "Ali".compareTo("Ali"));
     }
 }
