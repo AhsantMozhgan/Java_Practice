@@ -55,5 +55,8 @@ public class Main2 {
         String nameThree = "AliReza";
         System.out.println("startsWith: " + nameThree.startsWith("Ali"));   // output: true
         System.out.println("endsWith: " + nameThree.endsWith("Reza"));      // output: true
+
+        // length()
+        System.out.println("nameThree length is: " + nameThree.length());
     }
 }
