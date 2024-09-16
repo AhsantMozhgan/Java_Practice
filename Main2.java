@@ -29,12 +29,20 @@ public class Main2 {
 //            System.out.println("The strings are not equal");
 
 
-        // compare with ignore case
-        String nameOne = "ali Reza";
-        String nameTwo = new String("Ali Reza");
-        if (nameOne.equalsIgnoreCase(nameTwo))   // this is a correct way and output would be 'he strings are equal'
-            System.out.println("The strings are equal");
-        else
-            System.out.println("The strings are not equal");
+//        // compare with ignore case
+//        String nameOne = "ali Reza";
+//        String nameTwo = new String("Ali Reza");
+//        if (nameOne.equalsIgnoreCase(nameTwo))   // this is a correct way and output would be 'he strings are equal'
+//            System.out.println("The strings are equal");
+//        else
+//            System.out.println("The strings are not equal");
+
+        // compare with 'compareTo' (the result is zero or a positive number or a negative number, and it is not boolean)
+        String nameOne = "Ali";
+        String nameTwo = new String("Abbas");
+
+        System.out.println(nameOne.compareTo(nameTwo)); // output: 10 (output is a positive number. in here the deference between 'l' and 'b' is 10 characters)
+        // Ali < ali (because The numerical code of lowercase letters is bigger than the numerical code of uppercase letters)
+        // Ali < Ali Reza ( because Ali is the same in both but 'Ali Reza' is bigger because it continues after 'Ali'
     }
 }
