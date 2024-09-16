@@ -65,5 +65,10 @@ public class Main2 {
             System.out.println(name4.charAt(i));
         }
 
+        // concat method
+        String name5 = name4.concat(" jan"); // or mor easy way: String name5 = name4 + " jan";
+        System.out.println("name is Ali Reza: " + name4);
+        System.out.println("concat 'jan' to Ali Reza: " + name5);
+
     }
 }
