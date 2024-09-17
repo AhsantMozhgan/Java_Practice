@@ -95,5 +95,8 @@ public class Main2 {
         System.out.println("replace All: " + name4.replaceAll("Ali", "taghi")); // taghi Reza
         System.out.println(name4);
 
+        System.out.println("replace First: " + name4.replaceFirst("ali", "taghi")); // taghi Reza
+        System.out.println(name4);
+
     }
 }
