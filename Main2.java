@@ -83,5 +83,12 @@ public class Main2 {
         // toUpperCase
         System.out.println(name4.toUpperCase());
 
+        // trim
+        String name6 = "     Ali Reza       ";
+        System.out.println(name6);
+        System.out.println(name6.trim());
+
+        // replace
+        System.out.println("replace 'A' instead of 'a': " + name4.replace('a', 'A'));
     }
 }
