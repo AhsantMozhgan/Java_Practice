@@ -110,5 +110,33 @@ public class Main2 {
             System.out.println(nameParts[i]);
         }
 
+        // indexOf
+        String name7 = "ali Reza";
+        System.out.println("indexOf('a') in 'Ali Reza' is: " + name7.indexOf('a'));             // search from left side
+        System.out.println("indexOf('a') in 'Ali Reza' is: " + name7.lastIndexOf('a'));     // search from left side
+
+        System.out.println(name7.substring(name7.indexOf('R')));    // output: Reza
+
+        // it starts from index 1 instead of 0 (left to right)
+        System.out.println("indexOf('a') in 'Ali Reza' (from index 1) is: " + name7.indexOf('a', 1));       // 7
+
+        // it starts from last index (from right to left), searching backward from specify index (from index 1)
+        System.out.println("indexOf('a') in 'Ali Reza' (from last index of #1) is: " + name7.lastIndexOf('a', 1));   // 0
+
+        // it starts from last index (from right to left), searching backward from specify index (from index 7)
+        System.out.println("indexOf('a') in 'Ali Reza' (from last index of #7) is: " + name7.lastIndexOf('a', 7));   // 7
+
+        // it starts from last index (from right to left), searching backward from specify index (from index 6)
+        System.out.println("indexOf('a') in 'Ali Reza' (from last index of #7) is: " + name7.lastIndexOf('a', 6));   // 0
+
+        String name8 = "ali Reza ali Naghi";
+        System.out.println("indexOf('ali') in 'ali Reza ali Naghi' is: " + name8.indexOf("ali"));  // 0
+        System.out.println("indexOf('ali') in 'ali Reza ali Naghi' is: " + name8.indexOf("ali", 1));  // 9
+        System.out.println("indexOf('ali') in 'ali Reza ali Naghi' is: " + name8.lastIndexOf("ali", 1));  // 0
+        System.out.println("indexOf('ali') in 'ali Reza ali Naghi' is: " + name8.lastIndexOf("ali", 8));  // 0
+
+
+
+
     }
 }
