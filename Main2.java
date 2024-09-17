@@ -98,5 +98,17 @@ public class Main2 {
         System.out.println("replace First: " + name4.replaceFirst("ali", "taghi")); // taghi Reza
         System.out.println(name4);
 
+        // split
+        String fullName = "Mr. Jack D. Brown";
+        String [] nameParts = fullName.split(" ");     // output: Mr.
+                                                             //         Jack
+                                                             //         D.
+                                                             //         Brown
+
+//        String [] nameParts = fullName.split("  ");     // output: Mr. Jack D. Brown
+        for (int i = 0; i < nameParts.length; i++) {
+            System.out.println(nameParts[i]);
+        }
+
     }
 }
