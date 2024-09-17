@@ -90,5 +90,10 @@ public class Main2 {
 
         // replace
         System.out.println("replace 'A' instead of 'a': " + name4.replace('a', 'A'));
+
+        // replaceAll
+        System.out.println("replace All: " + name4.replaceAll("Ali", "taghi")); // taghi Reza
+        System.out.println(name4);
+
     }
 }
