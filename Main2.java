@@ -137,6 +137,15 @@ public class Main2 {
 
 
 
+        int j = 2;
+//        Integer a = new Integer(2);   // instead we can write this: Integer a = 2;
+        Integer a = 2;
 
+//        int i = a.intValue();           // instead we can write this: int i = a;
+        int i = a;
+
+        String str = "123";
+        int i1 = Integer.parseInt(str);
+        System.out.println(i1);
     }
 }
