@@ -27,5 +27,21 @@ public class ArrayListTest {
         System.out.println(names);
 
         System.out.println(names.get(2));       // Ali      // get() method does not show as bracket []
+
+        // capacity here is 3 but the number of elements is 5
+        System.out.println(names.size());
+
+        // show elements from left to right
+        for (int i = 0; i < names.size(); i++) {
+            // show each element in one line
+            System.out.println(names.get(i));
+        }
+
+        // show elements from right to left
+        // the last element in Array List is 'size() - 1'
+        for (int i = names.size() - 1; i >= 0; i--) {
+            // show each element in one line
+            System.out.println(names.get(i));
+        }
     }
 }
