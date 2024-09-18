@@ -23,6 +23,9 @@ public class ArrayListTest {
         Collections.sort(names);    // must import Collections class
         System.out.println(names);
 
-        
+        names.add(1, "Jafar");  // add element to index 1       // [Abbas, Jafar, Ali, Naghi, Taghi]
+        System.out.println(names);
+
+        System.out.println(names.get(2));       // Ali      // get() method does not show as bracket []
     }
 }
