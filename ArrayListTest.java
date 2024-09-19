@@ -1,3 +1,5 @@
+import com.sun.security.jgss.GSSUtil;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -56,8 +58,19 @@ public class ArrayListTest {
         names.set(0, "Money");
         System.out.println(names);
 
+        names.clear();
+        names.add("Ali");
+        names.add("Taghi");
+        names.add("Abbas");
+        names.add("Taghi");
+        System.out.println(names);
+//        names.remove(2);
+//        System.out.println(names);
 
-
+        System.out.println(names.indexOf("Taghi"));
+        System.out.println(names.lastIndexOf("Taghi"));
+//        names.clear();
+//        System.out.println(names);
 
     }
 }
