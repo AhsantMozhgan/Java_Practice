@@ -49,6 +49,14 @@ public class ArrayListTest {
             // show each element in one line
             System.out.println(names.get(i));
         }
+        names.clear();
+        names.add("Ehsan");
+        names.add("Mohsen");
+        System.out.println(names);
+        names.set(0, "Money");
+        System.out.println(names);
+
+
 
 
     }
