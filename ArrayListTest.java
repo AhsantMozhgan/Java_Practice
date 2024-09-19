@@ -72,5 +72,21 @@ public class ArrayListTest {
 //        names.clear();
 //        System.out.println(names);
 
+        // searching an element in the ArrayList
+        if (names.indexOf("Taghi") != -1) {
+            System.out.println("Exists");
+        }
+
+        // searching an element in the ArrayList
+        if (names.indexOf("Jafar") != -1) {
+            System.out.println("Exists");
+        }
+        // OR
+        if (names.contains("Jafar")) {
+            System.out.println("Exists");
+        }
+
+
+
     }
 }
