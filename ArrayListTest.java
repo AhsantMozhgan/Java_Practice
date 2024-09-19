@@ -37,11 +37,19 @@ public class ArrayListTest {
             System.out.println(names.get(i));
         }
 
+        // OR
+        // show elements from left to right
+        for (String name : names) {     // this 'for' cant show from right to left
+            System.out.println(name);
+        }
+
         // show elements from right to left
         // the last element in Array List is 'size() - 1'
         for (int i = names.size() - 1; i >= 0; i--) {
             // show each element in one line
             System.out.println(names.get(i));
         }
+
+
     }
 }
