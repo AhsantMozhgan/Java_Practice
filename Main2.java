@@ -148,6 +148,10 @@ public class Main2 {
         int i1 = Integer.parseInt(str);
         System.out.println(i1);
 
-        System.out.println(CircleClass.getNumOfCircles());      // 0
+        System.out.println("Number of circle is: " + CircleClass.getNumOfCircles());      // 0
+
+        new CircleClass();
+        new CircleClass(3);
+        System.out.println("Number of circle is: " + CircleClass.getNumOfCircles());      // 2
     }
 }
