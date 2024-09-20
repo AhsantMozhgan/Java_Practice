@@ -2,6 +2,7 @@ import com.sun.security.jgss.GSSUtil;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Vector;
 
 public class ArrayListTest {
     public static void main(String[] args) {
@@ -74,19 +75,32 @@ public class ArrayListTest {
 
         // searching an element in the ArrayList
         if (names.indexOf("Taghi") != -1) {
-            System.out.println("Exists");
+            System.out.println("Taghi Exists");
         }
 
         // searching an element in the ArrayList
         if (names.indexOf("Jafar") != -1) {
-            System.out.println("Exists");
+            System.out.println("Jafar Exists");
         }
         // OR
         if (names.contains("Jafar")) {
-            System.out.println("Exists");
+            System.out.println("Jafar Exists");
         }
 
+        // Vector
+        // it is better to do not use Vector and istead use ArrayList
+//        Vector<String> names2 = new Vector(3);
+        Vector<String> names2 = new Vector(3, 4);
+        names2.add("Maryam");
+        names2.add("Mohsen");
+        names2.add("Mina");
+        System.out.println("current capacity: " + names2.capacity());  // 'capacity()' shows the current capacity.      // 3
+        System.out.println("current size: " + names2.size());       // 3
 
+        // using 'Vector<String> names2 = new Vector(3, 4);' instead of 'Vector<String> names2 = new Vector(3);'
+        names2.add("Ben");
+        System.out.println("current capacity: " + names2.capacity());  // 'capacity()' shows the current capacity.      // 7
+        System.out.println("current size: " + names2.size());       // 4
 
     }
 }
