@@ -153,5 +153,7 @@ public class Main2 {
         new CircleClass();
         new CircleClass(3);
         System.out.println("Number of circle is: " + CircleClass.getNumOfCircles());      // 2
+
+        System.out.println(CircleClass.PI);
     }
 }

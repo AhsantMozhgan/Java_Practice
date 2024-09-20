@@ -1,6 +1,7 @@
 public class CircleClass {
     // static definition
     private static int numOfCircles;
+    public static final double PI = 3.14;  // 'final' is public because we can not change it, and it can be seen from outside class
 
     private int radius;
     // default constructor
