@@ -147,5 +147,7 @@ public class Main2 {
         String str = "123";
         int i1 = Integer.parseInt(str);
         System.out.println(i1);
+
+        System.out.println(CircleClass.getNumOfCircles());      // 0
     }
 }
