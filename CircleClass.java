@@ -1,4 +1,7 @@
 public class CircleClass {
+    // static definition
+    private static int numOfCircles;
+
     private int radius;
     // default constructor
     public CircleClass() {     // incorrect form: 'void CircleClass' because constructor does not return anything
@@ -8,6 +11,8 @@ public class CircleClass {
 
     // constructor with one parameter
     public CircleClass(int r) {
+        // we add 'numOfCircles++;' in here because this constructor with parameter is called in the constructor with no parameter(default constructor)
+        numOfCircles++;
         radius = r;
     }
 
@@ -19,6 +24,7 @@ public class CircleClass {
 //            radius = 1;
 //        }
 //    }
+    
 
     // Using getter if we want to know the radius (return the value of radius)
     public int getRadius() {

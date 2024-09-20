@@ -101,6 +101,5 @@ public class ArrayListTest {
         names2.add("Ben");
         System.out.println("current capacity: " + names2.capacity());  // 'capacity()' shows the current capacity.      // 7
         System.out.println("current size: " + names2.size());       // 4
-
     }
 }
