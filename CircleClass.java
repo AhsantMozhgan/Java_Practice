@@ -24,7 +24,12 @@ public class CircleClass {
 //            radius = 1;
 //        }
 //    }
-    
+
+    // 'numOfCircles' is static, and it is better to create static method for it
+    // we do not create set method for 'numOfCircles' because we don't want to make any changes from outside this class
+    public static int getNumOfCircles() {
+        return numOfCircles;
+    }
 
     // Using getter if we want to know the radius (return the value of radius)
     public int getRadius() {
