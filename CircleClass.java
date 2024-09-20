@@ -28,6 +28,7 @@ public class CircleClass {
     // 'numOfCircles' is static, and it is better to create static method for it
     // we do not create set method for 'numOfCircles' because we don't want to make any changes from outside this class
     public static int getNumOfCircles() {
+//        radius++;   // error because we can't use none static attribute in a static method
         return numOfCircles;
     }
 
