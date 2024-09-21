@@ -148,6 +148,7 @@ public class Main2 {
         int i1 = Integer.parseInt(str);
         System.out.println(i1);
 
+        // we do not need to create an object from CircleCClass because 'getNumOfCircles()' is static
         System.out.println("Number of circle is: " + CircleClass.getNumOfCircles());      // 0
 
         new CircleClass();
