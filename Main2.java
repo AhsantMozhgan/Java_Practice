@@ -156,5 +156,9 @@ public class Main2 {
         System.out.println("Number of circle is: " + CircleClass.getNumOfCircles());      // 2
 
         System.out.println(CircleClass.PI);
+
+        // for inheritance
+        CircleClass c1 = new CircleClass();
+        System.out.println(c1.getColor());  // 'getColor()' is in Shape class, and it is public, so we can access to it in here
     }
 }
