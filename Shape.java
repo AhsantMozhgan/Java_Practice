@@ -32,4 +32,8 @@ public class Shape {
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
+
+    public void print() {
+        System.out.println("color: " + color + "isFilled: " + filled);
+    }
 }
