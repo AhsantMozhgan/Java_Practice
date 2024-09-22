@@ -35,6 +35,7 @@ public class CircleClass extends Shape {
 //        }
 //    }
 
+    // calling a constructor from super class (parent) in the subclass (child)
     CircleClass (Color color, boolean filled, int radius) {
         // the 'super()' is default constructor of parent
         // if we do not use super(color, filled), the color of circle is default color (which is red here) because it called the super() which is default constructor of parent

@@ -160,11 +160,12 @@ public class Main2 {
 
         // for inheritance
         CircleClass c1 = new CircleClass();
-        System.out.println(c1.getColor());  // 'getColor()' is in Shape class, and it is public, so we can access to it in here
+        // 'getColor()' is in Shape class, and it is public, so we can access to it in here
+        System.out.println(c1.getColor());  // java.awt.Color[r=255,g=0,b=0]
 
         // calling from this constructor: 'CircleClass (Color color, boolean filled, int radius)'
         CircleClass c2 = new CircleClass(Color.yellow, true, 3);
-        System.out.println(c2.getColor());
+        System.out.println(c2.getColor());      // java.awt.Color[r=255,g=255,b=0]
 
 
     }
