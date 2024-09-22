@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class CircleClass extends Shape {
     // static definition
     private static int numOfCircles;
@@ -16,7 +18,12 @@ public class CircleClass extends Shape {
     public CircleClass(int r) {
         // we add 'numOfCircles++;' in here because this constructor with parameter is called in the constructor with no parameter(default constructor)
         numOfCircles++;
-        radius = r;
+//        radius = r;
+        if (r > 0) {
+            radius = r;
+        } else {
+            radius = 1;
+        }
     }
 
     // OR
@@ -27,6 +34,20 @@ public class CircleClass extends Shape {
 //            radius = 1;
 //        }
 //    }
+
+    CircleClass (Color color, boolean filled, int radius) {
+        // the 'super()' is default constructor of parent
+        // if we do not use super(color, filled), the color of circle is default color (which is red here) because it called the super() which is default constructor of parent
+        super(color, filled);   // the super() is parent's constructor, and it must be in the first line in this child's constructor
+        if (radius > 0) {
+            this.radius = radius;
+        } else {
+            this.radius = 1;
+        }
+
+//        super(color, filled);   // error because the super() is parent's constructor, and it must be in the first line in this child's constructor
+
+    }
 
     // 'numOfCircles' is static, and it is better to create static method for it
     // we do not create set method for 'numOfCircles' because we don't want to make any changes from outside this class
