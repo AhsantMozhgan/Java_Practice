@@ -23,5 +23,19 @@ public class Animal {
         }
     }
 
+    class Cat extends Animal {
+        // we got error here because we do not have default constructor in Animal. so we need to write this code:
+        //        public Cat(String name) {
+        //            super(name);
+        //        }
+        public Cat(String name) {
+            super(name);
+        }
+
+        public void mioo() {
+            System.out.println("miooooooooo");
+        }
+
+    }
 
 }
