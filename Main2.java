@@ -170,5 +170,12 @@ public class Main2 {
         // for showing overriding method
         Shape s = new Shape(Color.blue, true);
         s.print();  // color: java.awt.Color[r=0,g=0,b=255]isFilled: true
+        System.out.println();
+
+        // CircleClass is subclass of Shape
+        CircleClass circle = new CircleClass(2);
+//        circle.print(); // color: java.awt.Color[r=255,g=0,b=0]isFilled: false
+        // override print(). print method in subclass (CircleClass) is override from superclass (Shape) and print 'radius' now
+        circle.print(); // color: java.awt.Color[r=255,g=0,b=0]isFilled: false radius: 2
     }
 }

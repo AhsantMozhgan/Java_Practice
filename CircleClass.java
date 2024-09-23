@@ -71,4 +71,10 @@ public class CircleClass extends Shape {
     public double getArea() {
         return Math.PI * radius * radius;
     }
+
+    @Override
+    public void print() {
+        super.print();
+        System.out.println(" radius: " + radius);
+    }
 }

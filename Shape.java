@@ -34,6 +34,6 @@ public class Shape {
     }
 
     public void print() {
-        System.out.println("color: " + color + "isFilled: " + filled);
+        System.out.print("color: " + color + "isFilled: " + filled);
     }
 }
