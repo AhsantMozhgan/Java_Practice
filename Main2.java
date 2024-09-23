@@ -184,5 +184,15 @@ public class Main2 {
 //        Object
         System.out.println("calling toString(): ");
         System.out.println(circle.toString());
+
+        // UpCasting (Implicit casting)
+        double x = 2;
+        System.out.println(x);  // 2
+
+
+        // DownCasting (Explicit casting)
+//        int y = 2.1;        // error
+        int y = (int)2.1;      // using '(int)' to make the output integer type
+        System.out.println(y);  // 2
     }
 }
