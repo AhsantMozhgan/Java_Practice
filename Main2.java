@@ -208,5 +208,7 @@ public class Main2 {
 //        System.out.println(cc1);        // error: class Shape cannot be cast to class CircleClass
 
         Dog dog = new Dog("puppy");
+        dog.eat();
+        dog.bark();
     }
 }

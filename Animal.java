@@ -8,6 +8,13 @@ public class Animal {
         this.name = name;
     }
 
+    public static void sound(Animal animal) {
+        if (animal instanceof Dog)
+            System.out.println("vagh vagh");
+        else if (animal instanceof Cat)
+            System.out.println("miooooo");
+        else System.out.println("----------");
+    }
 }
 
 
