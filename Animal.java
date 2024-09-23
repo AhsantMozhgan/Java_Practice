@@ -9,9 +9,19 @@ public class Animal {
     }
 
     class Dog extends Animal {
+        // we got error here because we do not have default constructor in Animal. so we need to write this code:
+        //        public Dog(String name) {
+        //            super(name);
+        //        }
 
         public Dog(String name) {
             super(name);
         }
+
+        public void bark() {
+            System.out.println("vagh vagh vagh");
+        }
     }
+
+
 }
