@@ -8,34 +8,36 @@ public class Animal {
         this.name = name;
     }
 
-    class Dog extends Animal {
-        // we got error here because we do not have default constructor in Animal. so we need to write this code:
-        //        public Dog(String name) {
-        //            super(name);
-        //        }
+}
 
-        public Dog(String name) {
-            super(name);
-        }
 
-        public void bark() {
-            System.out.println("vagh vagh vagh");
-        }
+class Dog extends Animal {
+    // we got error here because we do not have default constructor in Animal. so we need to write this code:
+    //        public Dog(String name) {
+    //            super(name);
+    //        }
+
+    public Dog(String name) {
+        super(name);
     }
 
-    class Cat extends Animal {
-        // we got error here because we do not have default constructor in Animal. so we need to write this code:
-        //        public Cat(String name) {
-        //            super(name);
-        //        }
-        public Cat(String name) {
-            super(name);
-        }
+    public void bark() {
+        System.out.println("vagh vagh vagh");
+    }
+}
 
-        public void mioo() {
-            System.out.println("miooooooooo");
-        }
+class Cat extends Animal {
+    // we got error here because we do not have default constructor in Animal. so we need to write this code:
+    //        public Cat(String name) {
+    //            super(name);
+    //        }
+    public Cat(String name) {
+        super(name);
+    }
 
+    public void mioo() {
+        System.out.println("miooooooooo");
     }
 
 }
+
