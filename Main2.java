@@ -207,8 +207,16 @@ public class Main2 {
 //        CircleClass cc1 = (CircleClass) new Shape();    // this is not a good example of DownCasting because we will get error
 //        System.out.println(cc1);        // error: class Shape cannot be cast to class CircleClass
 
-        Dog dog = new Dog("puppy");
-        dog.eat();
-        dog.bark();
+//        Dog dog = new Dog("puppy");
+//        dog.eat();
+//        dog.bark();
+
+        Animal animal1 = new Dog("puppy");
+        Animal animal2 = new Cat("tom");
+        Animal animal3 = new Animal("what");
+
+        Animal.sound(animal1);
+        Animal.sound(animal2);
+        Animal.sound(animal3);
     }
 }

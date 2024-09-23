@@ -13,7 +13,8 @@ public class Animal {
             System.out.println("vagh vagh");
         else if (animal instanceof Cat)
             System.out.println("miooooo");
-        else System.out.println("----------");
+        else
+            System.out.println("----------");
     }
 }
 
