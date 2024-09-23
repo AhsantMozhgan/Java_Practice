@@ -194,5 +194,12 @@ public class Main2 {
 //        int y = 2.1;        // error
         int y = (int)2.1;      // using '(int)' to make the output integer type
         System.out.println(y);  // 2
+
+        // UpCasting (Implicit casting) in object-oriented
+//        CircleClass cc = new CircleClass();
+        // it is better to code in this form and not this form: 'CircleClass cc = new CircleClass();'
+        Shape cc = new CircleClass();   // the goal is to call attributes and methods that are in the Shape class (not in the CircleClass)
+        cc.setColor(Color.blue);
+        System.out.println(cc);
     }
 }
