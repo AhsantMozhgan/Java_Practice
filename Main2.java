@@ -201,5 +201,10 @@ public class Main2 {
         Shape cc = new CircleClass();   // the goal is to call attributes and methods that are in the Shape class (not in the CircleClass)
         cc.setColor(Color.blue);
         System.out.println(cc);
+
+        // DownCasting (Explicit casting) in object-oriented
+//        CircleClass cc1 = new Shape();  // error
+        CircleClass cc1 = (CircleClass) new Shape();    // this is not a good example of DownCasting because we will get error
+        System.out.println(cc1);        // error: class Shape cannot be cast to class CircleClass
     }
 }
