@@ -80,6 +80,7 @@ public class CircleClass extends Shape {
 
     @Override
     public String toString() {
-//        return super.toString();
+        // return toString() method from Shape class + radius
+        return super.toString() + "r = " + radius;
     }
 }
