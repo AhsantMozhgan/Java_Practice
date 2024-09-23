@@ -176,6 +176,11 @@ public class Main2 {
         CircleClass circle = new CircleClass(2);
 //        circle.print(); // color: java.awt.Color[r=255,g=0,b=0]isFilled: false
         // override print(). print method in subclass (CircleClass) is override from superclass (Shape) and print 'radius' now
+        System.out.println("override print() method: ");
         circle.print(); // color: java.awt.Color[r=255,g=0,b=0]isFilled: false radius: 2
+
+        // by pressing 'CTRL + left click' we go to the Object class which is super class of all classes
+        // toString() method is in the Object class
+        Object
     }
 }
