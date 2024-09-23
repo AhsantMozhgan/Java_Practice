@@ -36,4 +36,10 @@ public class Shape {
     public void print() {
         System.out.print("color: " + color + "isFilled: " + filled);
     }
+
+    @Override
+    public String toString() {
+//        return "Shape{" + "color=" + color + ", filled=" + filled + '}';
+        return  "color=" + color + ", filled=" + filled;
+    }
 }

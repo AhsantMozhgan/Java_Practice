@@ -77,4 +77,9 @@ public class CircleClass extends Shape {
         super.print();
         System.out.println(" radius: " + radius);
     }
+
+    @Override
+    public String toString() {
+//        return super.toString();
+    }
 }

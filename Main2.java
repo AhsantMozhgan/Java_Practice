@@ -181,6 +181,8 @@ public class Main2 {
 
         // by pressing 'CTRL + left click' we go to the Object class which is super class of all classes
         // toString() method is in the Object class
-        Object
+//        Object
+        System.out.println("ggdhdg");
+        circle.toString();
     }
 }
