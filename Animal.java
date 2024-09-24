@@ -75,3 +75,8 @@ class Cat extends Animal {
 
 }
 
+// final class (final class can not be inheritances)
+final class hours extends Animal { // error
+    
+}
+
