@@ -1,8 +1,14 @@
 public class Animal {
     private String name;
-    public void eat() {
+//    public void eat() {
+//        System.out.println(name + " is eating something");
+//    }
+
+    // final method. if a method declare as 'final' in a class, the subclass can not override that method
+    public final void eat() {
         System.out.println(name + " is eating something");
     }
+
 
     public Animal(String name) {
         this.name = name;
@@ -41,6 +47,13 @@ class Dog extends Animal {
     public void makeSound() {
         System.out.println("VAGH VAGH");
     }
+
+    // final method. if a method declare as 'final' in a class, the subclass can not override that method
+    // eat() method declare as 'final' in Animal class, and Dog class is subclass of Animal and can not override eat() method. so we have error here
+//    public void eat() {
+//        System.out.println(name + " is eating something");
+//    }
+
 }
 
 class Cat extends Animal {
