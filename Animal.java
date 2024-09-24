@@ -16,6 +16,10 @@ public class Animal {
         else
             System.out.println("----------");
     }
+
+    public void makeSound() {
+        System.out.println("---makeSound----");
+    }
 }
 
 
@@ -32,6 +36,10 @@ class Dog extends Animal {
     public void bark() {
         System.out.println("vagh vagh vagh");
     }
+
+    public void makeSound() {
+        System.out.println("VAGH VAGH");
+    }
 }
 
 class Cat extends Animal {
@@ -43,8 +51,12 @@ class Cat extends Animal {
         super(name);
     }
 
-    public void mioo() {
-        System.out.println("miooooooooo");
+//    public void mioo() {
+//        System.out.println("miooooooooo");
+//    }
+
+    public void makeSound() {
+        System.out.println("MIOOOOOOOOO");
     }
 
 }
