@@ -17,6 +17,7 @@ public class Animal {
             System.out.println("----------");
     }
 
+    // create makeSound() in super class and subclasses for polymorphism definition
     public void makeSound() {
         System.out.println("---makeSound----");
     }
