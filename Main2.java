@@ -215,13 +215,13 @@ public class Main2 {
         Animal animal2 = new Cat("tom");
         Animal animal3 = new Animal("what");
 
-//        Animal.sound(animal1);
-//        Animal.sound(animal2);
-//        Animal.sound(animal3);
+        Animal.sound(animal1);      // vagh vagh
+        Animal.sound(animal2);      // miooooo
+        Animal.sound(animal3);      // ----------
 
         // show output for polymorphism definition
-        animal1.makeSound();
-        animal2.makeSound();
-        animal3.makeSound();
+        animal1.makeSound();        // VAGH VAGH
+        animal2.makeSound();        // MIOOOOOOOOO
+        animal3.makeSound();        // ---makeSound----
     }
 }
