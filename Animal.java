@@ -75,15 +75,15 @@ class Cat extends Animal {
 
 }
 
-// final class (final class can not be inheritances)
-final class Dog2 extends Animal {
-    public Dog2(String name) {
-        super(name);
-    }
-
-}
-// final class can not be inheritances. Dog2 is a final class and can not be inheritances in Horse class, and we have error here
-class Horse extends Dog2 { // error
-
-}
+//// final class (final class can not be inheritances)
+//final class Dog2 extends Animal {
+//    public Dog2(String name) {
+//        super(name);
+//    }
+//
+//}
+//// final class can not be inheritances. Dog2 is a final class and can not be inheritances in Horse class, and we have error here
+//class Horse extends Dog2 { // error
+//
+//}
 

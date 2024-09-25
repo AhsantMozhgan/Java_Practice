@@ -168,9 +168,9 @@ public class Main2 {
         System.out.println(c2.getColor());      // java.awt.Color[r=255,g=255,b=0]
 
         // for showing overriding method
-        Shape s = new Shape(Color.blue, true);
-        s.print();  // color: java.awt.Color[r=0,g=0,b=255]isFilled: true
-        System.out.println();
+//        Shape s = new Shape(Color.blue, true);      // we can not create a new instance from an abstract class (but we can create a new instance from its subclasses)
+//        s.print();  // color: java.awt.Color[r=0,g=0,b=255]isFilled: true
+//        System.out.println();
 
         // CircleClass is subclass of Shape
         CircleClass circle = new CircleClass(2);

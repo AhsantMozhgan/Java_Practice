@@ -1,6 +1,7 @@
 import java.awt.Color;
 
-public class Shape {
+//public class Shape {
+public abstract class Shape {   // if a class has abstract method, the class itself must be declared as abstract too.
     private Color color;    // import java.awt.Color for Color class;
     private boolean filled;
 
@@ -42,4 +43,11 @@ public class Shape {
 //        return "Shape{" + "color=" + color + ", filled=" + filled + '}';
         return  "color=" + color + ", filled=" + filled;
     }
+
+//    public double getArea() {
+//
+//    }
+
+    // abstract: if we want to write a method without body in a super class (Shape class in here), we declare that method as abstract
+    abstract public double getArea();   // if a class has abstract method, the class itself must be declared as abstract too.
 }
