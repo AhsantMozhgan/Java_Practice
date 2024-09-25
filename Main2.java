@@ -225,6 +225,12 @@ public class Main2 {
         animal3.makeSound();        // ---makeSound----
 
 
-        Shape shape = new Shape();  // error because 'Shape' is abstract, and cannot be instantiated
+//        Shape shape = new Shape();  // error because 'Shape' is abstract, and cannot be instantiated
+
+        Shape s1 = new CircleClass();    // this is correct form because 'CircleClass' is subclass of 'Shape' (Shape is super class for CircleClass)
+        System.out.println(s1.getArea());       // 3.141592653589793
+
+        Shape s2 = new Square();
+        System.out.println(s2.getArea());       // 1.0
     }
 }
