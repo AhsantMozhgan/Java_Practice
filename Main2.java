@@ -223,5 +223,8 @@ public class Main2 {
         animal1.makeSound();        // VAGH VAGH
         animal2.makeSound();        // MIOOOOOOOOO
         animal3.makeSound();        // ---makeSound----
+
+
+        Shape shape = new Shape();  // error because 'Shape' is abstract, and cannot be instantiated
     }
 }
