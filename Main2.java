@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main2 {
@@ -232,5 +233,13 @@ public class Main2 {
 
         Shape s2 = new Square();
         System.out.println(s2.getArea());       // 1.0
+
+        ArrayList<Shape> shapes = new ArrayList<>();
+        shapes.add(new CircleClass());
+        shapes.add(new Square());
+
+        for (Shape s : shapes) {  // we declare a variable (s) which its type is from the list elements (<Shape>), and then name of the array list (shapes)
+            System.out.println(s.getArea());
+        }
     }
 }
