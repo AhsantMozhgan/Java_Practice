@@ -21,11 +21,10 @@ public class Exception {
             // If no exception occurs, print the result of the division.
             System.out.println("" + i + " / " + j + " = " + k);
 
+        } catch (ArithmeticException e) {
+            // This block will catch ArithmeticException, which occurs if j is zero (division by zero)
+            System.out.println("Second number cannot be zero");
         }
-//        catch (ArithmeticException e) {
-//            // This block will catch ArithmeticException, which occurs if j is zero (division by zero)
-//            System.out.println("Second number cannot be zero");
-//        }
 //        catch (InputMismatchException e) {
         catch (RuntimeException e) {
             // This block will catch InputMismatchException, which occurs if the user inputs non-numeric values
@@ -34,16 +33,6 @@ public class Exception {
             // Terminate the program in case of invalid input, as the following logic depends on valid inputs
             return; // Code after this return statement (System.out.println("Bye Bye")) will not execute
         }
-
-        // The error in this code is due to the order of the catch blocks
-        // The RuntimeException catch block is placed before the ArithmeticException catch block.
-        // This is problematic because ArithmeticException is a subclass of RuntimeException.
-        // In Java, when catching exceptions, the order of catch blocks matters.
-        catch (ArithmeticException e) {
-            // This block will catch ArithmeticException, which occurs if j is zero (division by zero)
-            System.out.println("Second number cannot be zero");
-        }
-
         finally {
             // This block will always execute, regardless of whether an exception occurred or not
             System.out.println("This is the finally block");
