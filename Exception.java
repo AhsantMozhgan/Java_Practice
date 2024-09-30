@@ -26,12 +26,13 @@ public class Exception {
             System.out.println("Second number cannot be zero");
         }
 //        catch (InputMismatchException e) {
-        catch (RuntimeException e) {
+//        catch (RuntimeException e) {
+        catch (Throwable e) {
             // This block will catch InputMismatchException, which occurs if the user inputs non-numeric values
             System.out.println("Input must be a number");
 
             // Terminate the program in case of invalid input, as the following logic depends on valid inputs
-            return; // Code after this return statement (System.out.println("Bye Bye")) will not execute
+//            return; // Code after this return statement (System.out.println("Bye Bye")) will not execute
         }
         finally {
             // This block will always execute, regardless of whether an exception occurred or not
