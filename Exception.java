@@ -21,16 +21,20 @@ public class Exception {
             // If no exception occurs, print the result of the division.
             System.out.println("" + i + " / " + j + " = " + k);
 
-        } catch (ArithmeticException e) {
+        }
+        catch (ArithmeticException e) {
             // This block will catch ArithmeticException, which occurs if j is zero (division by zero)
             System.out.println("Second number cannot be zero");
-        } catch (InputMismatchException e) {
+        }
+//        catch (InputMismatchException e) {
+        catch (RuntimeException e) {
             // This block will catch InputMismatchException, which occurs if the user inputs non-numeric values
             System.out.println("Input must be a number");
 
             // Terminate the program in case of invalid input, as the following logic depends on valid inputs
             return; // Code after this return statement (System.out.println("Bye Bye")) will not execute
-        } finally {
+        }
+        finally {
             // This block will always execute, regardless of whether an exception occurred or not
             System.out.println("This is the finally block");
         }
