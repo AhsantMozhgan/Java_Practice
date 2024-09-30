@@ -26,8 +26,8 @@ public class Exception {
             System.out.println("Second number cannot be zero");
         }
 //        catch (InputMismatchException e) {
-//        catch (RuntimeException e) {
-        catch (Throwable e) {
+//        catch (RuntimeException e) {  // RuntimeException is superclass for InputMismatchException
+        catch (Throwable e) {   // Throwable is superclass for  RuntimeException
             // This block will catch InputMismatchException, which occurs if the user inputs non-numeric values
             System.out.println("Input must be a number");
 
