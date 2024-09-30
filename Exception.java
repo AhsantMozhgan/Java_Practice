@@ -34,6 +34,7 @@ public class Exception {
             // Terminate the program in case of invalid input, as the following logic depends on valid inputs
             return; // Code after this return statement (System.out.println("Bye Bye")) will not execute
         }
+        
         finally {
             // This block will always execute, regardless of whether an exception occurred or not
             System.out.println("This is the finally block");
