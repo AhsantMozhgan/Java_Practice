@@ -27,6 +27,9 @@ public class Exception {
         } catch (InputMismatchException e) {
             // This block will catch InputMismatchException, which occurs if the user inputs non-numeric values
             System.out.println("Input must be a number");
+
+            // Terminate the program in case of invalid input, as the following logic depends on valid inputs
+            return; // so this code after return (System.out.println("Bye Bye") will not execute
         }
 
         // This line will always execute, whether or not an exception was caught
