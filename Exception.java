@@ -29,10 +29,13 @@ public class Exception {
             System.out.println("Input must be a number");
 
             // Terminate the program in case of invalid input, as the following logic depends on valid inputs
-            return; // so this code after return (System.out.println("Bye Bye") will not execute
+            return; // Code after this return statement (System.out.println("Bye Bye")) will not execute
+        } finally {
+            // This block will always execute, regardless of whether an exception occurred or not
+            System.out.println("This is the finally block");
         }
 
-        // This line will always execute, whether or not an exception was caught
+        // This line will execute if no exception occurred or if an ArithmeticException was caught
         System.out.println("Bye Bye");
     }
 }
