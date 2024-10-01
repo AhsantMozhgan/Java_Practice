@@ -41,5 +41,8 @@ public class Exception {
 
         // This line will execute if no exception occurred or if an ArithmeticException was caught
         System.out.println("Bye Bye");
+
+        Account account = new Account(1000);
+        account.getOwnerNameFirstLetter();
     }
 }
