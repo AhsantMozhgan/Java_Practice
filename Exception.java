@@ -48,7 +48,7 @@ public class Exception {
 //        int[] a = new int[5];
 //        a[7] = 2;       // error: ArrayIndexOutOfBoundsException
 
-        int[] b = null;
-        b[7] = 2;       // error: NullPointerException
+//        int[] b = null;
+//        b[7] = 2;       // error: NullPointerException
     }
 }
