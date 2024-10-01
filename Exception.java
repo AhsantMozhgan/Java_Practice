@@ -42,7 +42,10 @@ public class Exception {
         // This line will execute if no exception occurred or if an ArithmeticException was caught
         System.out.println("Bye Bye");
 
-        Account account = new Account(1000);
-        account.getOwnerNameFirstLetter();
+//        Account account = new Account(1000);
+//        account.getOwnerNameFirstLetter();      // error: NullPointerException
+
+        int[] a = new int[5];
+        a[7] = 2;       // error: ArrayIndexOutOfBoundsException
     }
 }
