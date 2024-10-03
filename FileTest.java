@@ -32,8 +32,11 @@ public class FileTest {
 //        file.createNewFile();
 //        System.out.println(file.createNewFile());       // false
 
-        File createFile = new File("$123");     // it will create this file "$123"
+        File createFile = new File("$123");
+        File createFile1 = new File("?1234");     // true       // // it will create this file "$1234"
+
         createFile.createNewFile();
         System.out.println(createFile.createNewFile());
+        System.out.println(createFile1.createNewFile());        // true
     }
 }
