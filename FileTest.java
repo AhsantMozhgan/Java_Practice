@@ -7,5 +7,8 @@ public class FileTest {
         System.out.println(file.isDirectory());      // false
 
         System.out.println(file.getAbsoluteFile());     // this method returns the Address of file
+        System.out.println(file.getName());     // 1.txt
+        System.out.println(file.getParent());   // null
+        System.out.println(file.length());      // 15       // each character is 1 byte, also each character in Farsi is 2 byte
     }
 }
