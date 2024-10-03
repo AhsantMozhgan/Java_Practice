@@ -20,14 +20,20 @@ public class FileTest {
 //        }
 
 
-        System.out.println(file.exists());       // true
-        System.out.println(file.delete());       // true        // '1.txt' will delete
-        System.out.println(file.delete());       // false       // '1.txt' is deleted
+//        System.out.println(file.exists());       // true
+//        System.out.println(file.delete());       // true        // '1.txt' will delete
+//        System.out.println(file.delete());       // false       // '1.txt' is deleted
+//
+//        File file2 = new File("x");
+//        System.out.println(file2.exists());      // false
+//        System.out.println(file2.delete());      // false  // this is like shift+delete
 
-        File file2 = new File("x");
-        System.out.println(file2.exists());      // false
-        System.out.println(file2.delete());      // false  // this is like shift+delete
 
-        file.createNewFile();
+//        file.createNewFile();
+//        System.out.println(file.createNewFile());       // false
+
+        File createFile = new File("$123");     // it will create this file "$123"
+        createFile.createNewFile();
+        System.out.println(createFile.createNewFile());
     }
 }
