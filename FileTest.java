@@ -3,7 +3,7 @@ import java.io.IOException;
 
 public class FileTest {
     public static void main(String[] args) throws IOException {
-        File file = new File("1.txt");
+//        File file = new File("1.txt");
 //        System.out.println(file.exists());      // true
 //        System.out.println(file.isDirectory());      // false
 //
@@ -39,7 +39,18 @@ public class FileTest {
 //        System.out.println(createFile.createNewFile());
 //        System.out.println(createFile1.createNewFile());        // true
 
-        File createDirectory = new File("newDirectory");
-        System.out.println(createDirectory.mkdir());  // will create new folder in the path that you are
+//        File createDirectory = new File("newDirectory");
+//        System.out.println(createDirectory.mkdir());  // will create new folder in the path that you are
+
+//        File createNestedDirectory = new File("z\\t\\y");
+//        System.out.println(createNestedDirectory.mkdirs()); // create several nested folders in the path that you are
+
+//        File file = new File("y");
+//        System.out.println(file.mkdirs());
+
+        File file = new File("z\\t\\y");
+        System.out.println(file.mkdirs());
+
+
     }
 }
