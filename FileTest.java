@@ -25,6 +25,8 @@ public class FileTest {
 
         File file2 = new File("x");
         System.out.println(file2.exists());      // false
-        System.out.println(file2.delete());      // false  // it s like shift+delete
+        System.out.println(file2.delete());      // false  // this is like shift+delete
+
+        file.createNewFile();
     }
 }
