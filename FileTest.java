@@ -32,11 +32,14 @@ public class FileTest {
 //        file.createNewFile();
 //        System.out.println(file.createNewFile());       // false
 
-        File createFile = new File("$123");
-        File createFile1 = new File("?1234");     // true       // // it will create this file "$1234"
+//        File createFile = new File("$123");
+//        File createFile1 = new File("?1234");     // true       // // it will create this file "$1234"
+//
+//        createFile.createNewFile();
+//        System.out.println(createFile.createNewFile());
+//        System.out.println(createFile1.createNewFile());        // true
 
-        createFile.createNewFile();
-        System.out.println(createFile.createNewFile());
-        System.out.println(createFile1.createNewFile());        // true
+        File createDirectory = new File("newDirectory");
+        System.out.println(createDirectory.mkdir());  // will create new folder in the path that you are
     }
 }
