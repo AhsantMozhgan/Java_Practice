@@ -56,8 +56,15 @@ public class FileTest {
         try {
             FileWriter writer = new FileWriter("1.txt");
         } catch (IOException e) {
-            System.out.println("An error occurred");
+            System.out.println("An error occurred");    // file '1.txt' was already created and had some text in it, and 'FileWriter' will delete all the texts that was in side the '1.txt'
         }
+
+        try {
+            FileWriter writer = new FileWriter("11.txt");
+        } catch (IOException e) {
+            System.out.println("An error occurred");       // create new file named '11.txt'
+        }
+
 
 
     }
