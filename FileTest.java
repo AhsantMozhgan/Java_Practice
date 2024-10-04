@@ -1,8 +1,9 @@
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class FileTest {
-    public static void main(String[] args) throws IOException {
+//    public static void main(String[] args) throws IOException {
 //        File file = new File("1.txt");
 //        System.out.println(file.exists());      // true
 //        System.out.println(file.isDirectory());      // false
@@ -48,8 +49,15 @@ public class FileTest {
 //        File file = new File("y");
 //        System.out.println(file.mkdirs());
 
-        File file = new File("z\\t\\y");
-        System.out.println(file.mkdirs());
+    public static void main(String[] args) {        // when we delete 'throws IOException' we have error in here: FileWriter writer = new FileWriter("1.txt");
+//        File file = new File("z\\t\\y");
+//        System.out.println(file.mkdirs());
+//        FileWriter writer = new FileWriter("1.txt");
+        try {
+            FileWriter writer = new FileWriter("1.txt");
+        } catch (IOException e) {
+            System.out.println("An error occurred");
+        }
 
 
     }

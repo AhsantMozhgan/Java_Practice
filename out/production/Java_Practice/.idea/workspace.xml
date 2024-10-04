@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95326c6c-6013-434c-ab27-2777c3adf197" name="Changes" comment="" />
+    <list default="true" id="95326c6c-6013-434c-ab27-2777c3adf197" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/FileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,16 +33,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "117",
-    "last_opened_file_path": "/Users/mozhganahsant/Desktop/GitHub_Projects/Java_Practice",
-    "settings.editor.selected.configurable": "xpath.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;117&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mozhganahsant/Desktop/GitHub_Projects/Java_Practice&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;xpath.settings&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="AverageCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AverageCalculator" />
