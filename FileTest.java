@@ -92,15 +92,20 @@ public class FileTest {
 //            System.out.println("An error occurred");    // file '1.txt' was already created and had some text in it, and 'FileWriter' will not delete all the texts that was inside the '1.txt'
 //        }
 
+        // we can also use PrintWriter class
         try {
-            PrintWriter writer = new PrintWriter("1.txt");  // the text inside the file will get empty
+//            PrintWriter writer2 = new PrintWriter("1.txt");  // the text inside the file will get empty
 
-//            String str = reader.nextLine();
-//            while (!str.equals("finish")) {
-//                writer.write(str + '\n');
-//                str = reader.nextLine();    // if we do not write this code, it will read the first line and will write it forever
-//            }
-//            writer.close();
+            // file '1.txt' was already created and had some text in it, and 'PrintWriter' will not delete all the texts that was inside the '1.txt' (by using FileWriter)
+            FileWriter writer1 = new FileWriter("1.txt", true);
+            PrintWriter writer2 = new PrintWriter(writer1);  // now the text inside the file will not get empty
+
+            String str = reader.nextLine();
+            while (!str.equals("finish")) {
+                writer2.println(str + '\n');
+                str = reader.nextLine();    // if we do not write this code, it will read the first line and will write it forever
+            }
+            writer2.close();
         }  catch (IOException e) {
             System.out.println("An error occurred");    // file '1.txt' was already created and had some text in it, and 'FileWriter' will not delete all the texts that was inside the '1.txt'
         }
