@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class FileTest {
 //    public static void main(String[] args) throws IOException {
@@ -65,14 +66,29 @@ public class FileTest {
 //            System.out.println("An error occurred");       // create new file named '11.txt'
 //        }
 
+        // write this text: "write new text into 1.txt file" inside the '1.txt'
+//        try {
+//            FileWriter writer = new FileWriter("1.txt", true);
+//            writer.write("write new text into 1.txt file"); // 'write new text' will not write inside the '1.txt' file because we didn't close it
+//            writer.close();
+//        } catch (IOException e) {
+//            System.out.println("An error occurred");    // file '1.txt' was already created and had some text in it, and 'FileWriter' will not delete all the texts that was inside the '1.txt'
+//        }
+
+
+        // we want to write everything that user will enter
+        Scanner reader = new Scanner(System.in);
+
         try {
             FileWriter writer = new FileWriter("1.txt", true);
-            writer.write("write new text"); // 'write new text' will not write inside the '1.txt' file because we didn't close it
-        } catch (IOException e) {
+            String str = reader.nextLine();
+            while (!str.equals("finish")) {
+                writer.write(str);
+                str = reader.nextLine();    // if we do dot write this code, it will read the first line and will write it forever
+            }
+            writer.close();
+        }  catch (IOException e) {
             System.out.println("An error occurred");    // file '1.txt' was already created and had some text in it, and 'FileWriter' will not delete all the texts that was inside the '1.txt'
         }
-
-
-
     }
 }
