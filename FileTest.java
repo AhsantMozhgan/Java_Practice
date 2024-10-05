@@ -83,7 +83,7 @@ public class FileTest {
             FileWriter writer = new FileWriter("1.txt", true);
             String str = reader.nextLine();
             while (!str.equals("finish")) {
-                writer.write(str);
+                writer.write(str + '\n');
                 str = reader.nextLine();    // if we do dot write this code, it will read the first line and will write it forever
             }
             writer.close();
