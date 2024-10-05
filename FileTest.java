@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class FileTest {
@@ -79,14 +80,27 @@ public class FileTest {
         // we want to write everything that user will enter
         Scanner reader = new Scanner(System.in);
 
+//        try {
+//            FileWriter writer = new FileWriter("1.txt", true);
+//            String str = reader.nextLine();
+//            while (!str.equals("finish")) {
+//                writer.write(str + '\n');
+//                str = reader.nextLine();    // if we do not write this code, it will read the first line and will write it forever
+//            }
+//            writer.close();
+//        }  catch (IOException e) {
+//            System.out.println("An error occurred");    // file '1.txt' was already created and had some text in it, and 'FileWriter' will not delete all the texts that was inside the '1.txt'
+//        }
+
         try {
-            FileWriter writer = new FileWriter("1.txt", true);
-            String str = reader.nextLine();
-            while (!str.equals("finish")) {
-                writer.write(str + '\n');
-                str = reader.nextLine();    // if we do dot write this code, it will read the first line and will write it forever
-            }
-            writer.close();
+            PrintWriter writer = new PrintWriter("1.txt");  // the text inside the file will get empty
+
+//            String str = reader.nextLine();
+//            while (!str.equals("finish")) {
+//                writer.write(str + '\n');
+//                str = reader.nextLine();    // if we do not write this code, it will read the first line and will write it forever
+//            }
+//            writer.close();
         }  catch (IOException e) {
             System.out.println("An error occurred");    // file '1.txt' was already created and had some text in it, and 'FileWriter' will not delete all the texts that was inside the '1.txt'
         }
