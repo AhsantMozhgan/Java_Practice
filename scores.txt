@@ -1,0 +1,3 @@
+Ali         Ahmadi      12
+Zahra       Ahari       14
+Nader       Zare        20

@@ -112,6 +112,10 @@ public class FileTest {
         try {
             //        File f = new File("1.txt");
             Scanner reader1 = new Scanner(new File("scores.txt"));
+            while (reader1.hasNext()) {
+                String studentInfo = reader1.nextLine();
+                System.out.println(studentInfo);
+            }
         } catch (FileNotFoundException ex)  {
             System.out.println("File doesn't exist");
 
