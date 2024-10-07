@@ -136,7 +136,7 @@ public class FileTest {
 
         // we want to read an image
         try {
-            InputStream imgReader = new FileInputStream("1.png");
+            FileInputStream imgReader = new FileInputStream("1.png");
         } catch (FileNotFoundException ex) {
             System.out.println("Input file doesn't exist");
         }
