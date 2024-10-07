@@ -146,6 +146,8 @@ public class FileTest {
                 b = imgReader.read();       // this is the worst way that I can code
 
             }
+            imgWriter.close();
+
         } catch (FileNotFoundException ex) {
             System.out.println("Input file doesn't exist");
         } catch (IOException ex) {
