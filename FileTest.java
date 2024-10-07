@@ -136,8 +136,16 @@ public class FileTest {
 
         // we want to read an image
         try {
-            FileInputStream imgReader = new FileInputStream("1.png");
-            imgReader.read();
+            FileInputStream imgReader = new FileInputStream("1.png");   // use FileInputStream for reading
+            FileOutputStream imgWriter = new FileOutputStream("2 .png");   // use FileOutputStream for writing
+
+//            imgReader.read();
+            int b = imgReader.read();
+            while (b != -1) {
+                imgWriter.write(b);         // this is the worst way that I can code
+                b = imgReader.read();       // this is the worst way that I can code
+
+            }
         } catch (FileNotFoundException ex) {
             System.out.println("Input file doesn't exist");
         } catch (IOException ex) {
