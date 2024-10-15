@@ -5,7 +5,11 @@ public class Stack {
     // when we make new object we get space for this array in the memory.
     private int s[];
     public Stack() {
-        s = new int [10];
+        s = new int [10];       // or 'this(10);'
+    }
+
+    public Stack(int size) {
+        s = new int [size];
     }
 }
 
