@@ -11,6 +11,10 @@ public class Stack {
     public Stack(int size) {
         s = new int [size];
     }
+
+    public void push (int item) {
+
+    }
 }
 
 // Generic definition
