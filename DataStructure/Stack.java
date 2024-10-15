@@ -1,10 +1,14 @@
 package DataStructure;
 
+class StackFullException extends RuntimeException {
+}
+
 public class Stack {
     // the length of this array is zero here because there's no space for this array in the memory.
     // when we make new object we get space for this array in the memory.
     private int s[];
     private int top = -1;        // this means stack is empty
+
 
     public Stack() {
         s = new int [10];       // or 'this(10);'
@@ -15,6 +19,10 @@ public class Stack {
     }
 
     public void push (int item) {
+        // check if the stack is full or not, if it is full throw exception
+        if (top == s.length - 1) {      // or if (top == capacity - 1) {
+            throw new StackFullException();     // this class is defined on top
+        }
 
     }
 }
