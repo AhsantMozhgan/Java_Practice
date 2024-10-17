@@ -23,7 +23,7 @@ public class Test {
 //    }
 
     // for doubling the array length of s
-    public static void main(String[] args) {
+    public static void main(String[] args) throws StackEmptyException {
         Stack stack = new Stack(2);
         stack.push(1);
         stack.push(2);
@@ -35,5 +35,12 @@ public class Test {
 
         System.out.println(stack.getSize());
         System.out.println(stack.getCapacity());
+
+
+        while (!stack.isEmpty()) {
+            int element = stack.pop();
+            System.out.println(element);
+
+        }
     }
 }
