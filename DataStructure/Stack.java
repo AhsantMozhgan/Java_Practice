@@ -1,6 +1,7 @@
 package DataStructure;
 
-class StackFullException extends RuntimeException {
+//class StackFullException extends RuntimeException {
+class StackFullException {
 }
 
 public class Stack {
@@ -20,8 +21,15 @@ public class Stack {
 
     public void push (int item) {
         // check if the stack is full or not, if it is full throw exception
-        if (top == s.length - 1) {      // or if (top == capacity - 1) {
-            throw new StackFullException();     // this class is defined on top
+        if (top == s.length - 1) {
+//            throw new StackFullException();     // this class is defined on top
+
+            // if the stack is full add new cell and push item
+            ++top;
+            s[top] = item;
+            // OR
+            //s[++top] = item;
+
         }
 
     }
