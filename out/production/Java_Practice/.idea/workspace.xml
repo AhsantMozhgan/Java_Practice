@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95326c6c-6013-434c-ab27-2777c3adf197" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/DataStructure/NumberOfRepeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructure/NumberOfRepeat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructure/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructure/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +44,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="DataStructure" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
