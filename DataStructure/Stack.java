@@ -70,6 +70,10 @@ public class Stack {
     public int getSize() {
         return top + 1;
     }
+
+    public int getCapacity() {
+        return s.length;
+    }
 }
 
 
