@@ -66,6 +66,10 @@ public class Stack {
     public boolean isEmpty() {
         return top == -1;       // if (top == -1) return true;
     }
+
+    public int getSize() {
+        return top + 1;
+    }
 }
 
 
