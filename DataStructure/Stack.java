@@ -62,6 +62,10 @@ public class Stack {
         }
         return s[top];
     }
+
+    public boolean isEmpty() {
+        return top == -1;       // if (top == -1) return true;
+    }
 }
 
 
