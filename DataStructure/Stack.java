@@ -1,7 +1,11 @@
 package DataStructure;
 
-//class StackFullException extends RuntimeException {
-class StackFullException {
+class StackFullException extends RuntimeException {
+//class StackFullException {
+}
+
+class StackEmptyException extends Exception {
+
 }
 
 public class Stack {
@@ -22,18 +26,45 @@ public class Stack {
     public void push (int item) {
         // check if the stack is full or not, if it is full throw exception
         if (top == s.length - 1) {
-//            throw new StackFullException();     // this class is defined on top
+            throw new StackFullException();     // this class is defined on top
 
-            // if the stack is full add new cell and push item
-            ++top;
-            s[top] = item;
-            // OR
-            //s[++top] = item;
+//            // if the stack is full add new cell and push item
+//            ++top;
+//            s[top] = item;
+//            // OR
+//            //s[++top] = item;
+//            //s[top++] = item;      // incorrect
 
         }
-
+        // if the stack is full add new cell and push item
+//        ++top;
+//        s[top] = item;
+        // OR
+        s[++top] = item;
+        //s[top++] = item;      // incorrect
     }
+
+    public int pop() throws StackEmptyException {
+        if (top == -1) {
+            throw new StackEmptyException();
+        }
+//        --top;
+//        return s[top];
+
+        // OR
+        return s[top--];
+    }
+
+
 }
+
+
+
+
+
+
+
+
 
 // Generic definition
 // if we want to do not define the type of the element, we use generic definition.
