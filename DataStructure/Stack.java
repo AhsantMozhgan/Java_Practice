@@ -55,7 +55,13 @@ public class Stack {
         return s[top--];
     }
 
-
+    //peek is like pop, but it does not delete, and it just shows the top item
+    public int peek() throws StackEmptyException {
+        if (top == -1) {
+            throw new StackEmptyException();
+        }
+        return s[top];
+    }
 }
 
 
