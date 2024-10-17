@@ -23,25 +23,38 @@ public class Stack {
         s = new int [size];
     }
 
-    public void push (int item) {
-        // check if the stack is full or not, if it is full throw exception
+//    public void push (int item) {
+//        // check if the stack is full or not, if it is full throw exception
+//        if (top == s.length - 1) {
+//            throw new StackFullException();     // this class is defined on top
+//
+////            // if the stack is full add new cell and push item
+////            ++top;
+////            s[top] = item;
+////            // OR
+////            //s[++top] = item;
+////            //s[top++] = item;      // incorrect
+//
+//        }
+//        // if the stack is full add new cell and push item
+////        ++top;
+////        s[top] = item;
+//        // OR
+//        s[++top] = item;
+//        //s[top++] = item;      // incorrect
+//    }
+
+//    double the array length (double the s.length)
+    public void push(int item) {
         if (top == s.length - 1) {
-            throw new StackFullException();     // this class is defined on top
+            int[] newArray = new int[2 * s.length];
 
-//            // if the stack is full add new cell and push item
-//            ++top;
-//            s[top] = item;
-//            // OR
-//            //s[++top] = item;
-//            //s[top++] = item;      // incorrect
-
+            for (int i = 0; i < s.length; i++) {
+                newArray[i] = s[i];
+            }
+            s = newArray;
         }
-        // if the stack is full add new cell and push item
-//        ++top;
-//        s[top] = item;
-        // OR
         s[++top] = item;
-        //s[top++] = item;      // incorrect
     }
 
     public int pop() throws StackEmptyException {
