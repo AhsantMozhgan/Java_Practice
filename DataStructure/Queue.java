@@ -1,8 +1,11 @@
 package DataStructure;
 
 class QueueFullException extends RuntimeException {
-
 }
+
+class QueueEmptyException extends Exception {
+}
+
 public class Queue {
     private int[] q;
     private int f, r;
@@ -36,6 +39,16 @@ public class Queue {
 //        }
 //        we can write this:
         r = (r + 1) % q.length;
+    }
+
+    public int dequeue() throws QueueEmptyException {
+        // condition for being empty is 'front == rear'
+        if (f == r) {
+            throw new QueueEmptyException();
+        }
+        int item = q[f];    // we want to delete the front cell, so we need to keep front's data somewhere (in item here)
+        f = (f + 1) % q.length;
+        return item;
     }
 
 }
