@@ -39,8 +39,7 @@ public class Test {
 
         while (!stack.isEmpty()) {
             int element = stack.pop();
-            System.out.println(element);
-
+            System.out.println("pop elements: " + element);
         }
     }
 }
