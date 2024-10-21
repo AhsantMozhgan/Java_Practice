@@ -51,4 +51,25 @@ public class Queue {
         return item;
     }
 
+    public boolean isEmpty() {
+        return (f == r);
+    }
+
+    public static void main(String[] args) throws QueueEmptyException {
+        Queue queue = new Queue();
+        for (int i = 1; i <= 4; i++) {
+            queue.enqueue(i);
+        }
+        queue.dequeue();
+        queue.dequeue();
+
+        queue.enqueue(5);
+        queue.enqueue(7);
+
+        while (!queue.isEmpty()) {
+            System.out.println(queue.dequeue());
+        }
+
+    }
+
 }
