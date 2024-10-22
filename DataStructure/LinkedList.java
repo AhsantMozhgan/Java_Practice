@@ -70,6 +70,19 @@ public class LinkedList {
         size++;
     }
 
+    public int removeFirst() throws ListEmptyException {
+        if (first == null) {
+            throw new ListEmptyException();
+        }
+        // first of all we need to keep data (int data = first.data;) and then (first = first.next;)
+        int data = first.data;
+        first = first.next;
+        return data;
+    }
+
+    public class ListEmptyException extends Exception {
+    }
+
 
     public void print() {
         if (first == null) {
