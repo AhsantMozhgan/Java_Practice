@@ -12,5 +12,8 @@ public class Node {
         Node a  = new Node(2);
         Node b  = new Node(5);
         Node c  = new Node(7);
+
+        a.next = b;
+        b.next = c;
     }
 }
