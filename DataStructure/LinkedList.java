@@ -81,8 +81,7 @@ public class LinkedList {
         return data;
     }
 
-    public class ListEmptyException extends Exception {
-    }
+
 
 
     public void print() {
@@ -114,4 +113,6 @@ public class LinkedList {
         System.out.print("]");
     }
 
+}
+class ListEmptyException extends Exception {
 }

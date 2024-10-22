@@ -23,7 +23,7 @@ public class Test {
 //    }
 
     // for doubling the array length of s
-    public static void main(String[] args) throws StackEmptyException {
+    public static void main(String[] args) throws StackEmptyException, ListEmptyException {
         Stack stack = new Stack(2);
         stack.push(1);
         stack.push(2);
@@ -54,6 +54,9 @@ public class Test {
         list.add(1, 5);
         list.add(1, 7);
         list.add(2, 9);
+
+        // for testing removeFirst() method
+        System.out.println("removeFirst: " + list.removeFirst());
 
 //        list.print();
         list.printAgain();
