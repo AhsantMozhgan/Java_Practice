@@ -25,6 +25,7 @@ public class LinkedList {
         if (first == null) {
             first = newNode;
             size++;
+            return;
         }
 
         // last node points to the first node
@@ -37,6 +38,25 @@ public class LinkedList {
         last.next = newNode;
 
         size++;
+    }
+
+
+    public void print() {
+        if (first == null) {
+            System.out.println("The list is empty.");
+            return;
+        }
+
+        Node current = first;
+        System.out.print("LinkedList: ");
+        while (current != null) {
+            System.out.print(current.data);
+            if (current.next != null) {
+                System.out.print(" -> ");
+            }
+            current = current.next;
+        }
+        System.out.println("\nSize: " + size);
     }
 
 }
