@@ -45,10 +45,17 @@ public class Test {
         // for testing LinkedList
         // Print the exponent of 7 from 1 to 1000
         LinkedList list = new LinkedList();
-        for (int i = 7; i <= 1000; i+=7) {
-            list.addLast(i);
-        }
-        list.print();
+//        for (int i = 7; i <= 1000; i+=7) {
+//            list.addLast(i);
+//        }
+
+        list.add(0, 2);
+        list.add(0, 3);
+        list.add(1, 5);
+        list.add(1, 7);
+        list.add(2, 9);
+
+//        list.print();
         list.printAgain();
     }
 }

@@ -44,10 +44,30 @@ public class LinkedList {
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException();
         }
+        // add element in first index
         if (index == 0) {
             addFirst(element);
             return;
         }
+
+        // add element in last index
+        if (index == size) {
+            addLast(element);
+            return;
+        }
+
+        // add element between first index and last index
+        Node previous = first;
+        // for (int i = 1; i < index; i++) {
+        // OR
+        for (int i = 1; i <= index - 1; i++) {
+            previous = previous.next;
+        }
+        Node newNode = new Node(element);
+        newNode.next = previous.next;
+        previous.next = newNode;
+
+        size++;
     }
 
 
