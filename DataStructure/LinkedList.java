@@ -40,6 +40,16 @@ public class LinkedList {
         size++;
     }
 
+    public void add(int index, int element) {
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException();
+        }
+        if (index == 0) {
+            addFirst(element);
+            return;
+        }
+    }
+
 
     public void print() {
         if (first == null) {
