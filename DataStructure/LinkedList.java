@@ -74,6 +74,15 @@ public class LinkedList {
         if (first == null) {
             throw new ListEmptyException();
         }
+        // check if this code works for a list with one node or not
+        if (first.next == null) {
+            int data = first.data;
+            first = null;
+            size--;
+            return data;
+        }
+
+
         // first of all we need to keep data (int data = first.data;) and then (first = first.next;)
         int data = first.data;
         first = first.next;
@@ -92,6 +101,7 @@ public class LinkedList {
         }
         int data = p.next.data;
         p.next = null;  // removing the last node
+        size--;
         return data;
     }
 
