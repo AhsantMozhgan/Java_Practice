@@ -81,6 +81,20 @@ public class LinkedList {
         return data;
     }
 
+    public int removeLast() throws ListEmptyException {
+        // in every data structure first check being full or empty when removing
+        if (first == null) {
+            throw new ListEmptyException();
+        }
+        Node p = first;
+        while (p.next.next != null) {    // condition : when p.next.next is not the last node
+            p = p.next;
+        }
+        int data = p.next.data;
+        p.next = null;  // removing the last node
+        return data;
+    }
+
 
 
 
