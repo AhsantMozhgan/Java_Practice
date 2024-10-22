@@ -41,5 +41,13 @@ public class Test {
             int element = stack.pop();
             System.out.println("pop elements: " + element);
         }
+
+        // for testing LinkedList
+        // Print the exponent of 7 from 1 to 1000
+        LinkedList list = new LinkedList();
+        for (int i = 7; i <= 1000; i+=7) {
+            list.addLast(i);
+        }
+
     }
 }

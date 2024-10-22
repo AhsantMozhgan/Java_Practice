@@ -22,6 +22,8 @@ public class LinkedList {
     public void addLast(int element) {
         Node newNode = new Node(element);
 
+
+
         // last node points to the first node
         Node last = first;
 
