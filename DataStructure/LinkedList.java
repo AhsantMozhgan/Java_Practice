@@ -77,6 +77,7 @@ public class LinkedList {
         // first of all we need to keep data (int data = first.data;) and then (first = first.next;)
         int data = first.data;
         first = first.next;
+        size--;     // don't forget to reduce size in the removeFirst() method
         return data;
     }
 
