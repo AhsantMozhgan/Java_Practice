@@ -59,4 +59,15 @@ public class LinkedList {
         System.out.println("\nSize: " + size);
     }
 
+    public void printAgain() {
+        // using current node to check do we reached to the end of the linked-list or not
+        Node current = first;
+        System.out.print("[");
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+        System.out.print("]");
+    }
+
 }

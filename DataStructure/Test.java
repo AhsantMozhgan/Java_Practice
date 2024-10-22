@@ -49,5 +49,6 @@ public class Test {
             list.addLast(i);
         }
         list.print();
+        list.printAgain();
     }
 }
