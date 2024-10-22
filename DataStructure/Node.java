@@ -26,6 +26,13 @@ public class Node {
         last.next = new Node(7);
         last = last.next;
 
-
+        // using current node to check do we reached to the end of the linked-list or not
+        Node current = first;
+        System.out.print("[");
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+        System.out.print("]");
     }
 }
