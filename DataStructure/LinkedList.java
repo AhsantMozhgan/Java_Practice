@@ -105,7 +105,27 @@ public class LinkedList {
         return data;
     }
 
+    // remove element from the desired location
+    public int remove(int index) throws Exception{
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException();
+        }
+        if (index == 0) {
+            return removeFirst();
+        }
+        if (index == size - 1) {
+            return removeLast();
+        }
 
+        Node p = first;
+        for (int i = 1; i <= index - 1; i++) {
+            p = p.next;
+        }
+        int data = p.next.data;         // OR 'Node current = p.next;'      int data = current.data;
+        p.next = p.next.next;           // OR 'p.next = current.next;'
+        size--;
+        return data;
+    }
 
 
     public void print() {
