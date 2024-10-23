@@ -127,6 +127,24 @@ public class LinkedList {
         return data;
     }
 
+    // write a static method that receive 2 arranged list of numbers and merge them in a way that the new list be arranged
+    public static LinkedList merge(LinkedList l1, LinkedList l2) {
+        LinkedList l3 = new LinkedList();
+        Node p = l1.first;
+        while (p != null) {
+            l3.addLast(p.data);
+            p = p.next;
+        }
+
+        p = l2.first;
+        while (p != null) {
+            l3.addLast(p.data);
+            p = p.next;
+        }
+        
+        return l3;
+    }
+
 
     public void print() {
         if (first == null) {
