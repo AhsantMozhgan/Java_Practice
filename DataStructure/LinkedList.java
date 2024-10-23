@@ -141,7 +141,7 @@ public class LinkedList {
             l3.addLast(p.data);
             p = p.next;
         }
-        
+
         return l3;
     }
 
@@ -173,6 +173,7 @@ public class LinkedList {
             current = current.next;
         }
         System.out.print("]");
+        System.out.println();
     }
 
 }

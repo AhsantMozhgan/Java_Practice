@@ -60,5 +60,23 @@ public class Test {
 
 //        list.print();
         list.printAgain();
+
+
+        // for testing merging 2 list in a new list
+        System.out.println("Merging 2 list in a new list: ");
+        LinkedList l1 = new LinkedList();
+        l1.addLast(2);
+        l1.addLast(9);
+
+        LinkedList l2 = new LinkedList();
+        l2.addLast(3);
+        l2.addLast(7);
+        l2.addLast(11);
+
+        LinkedList l3 = LinkedList.merge(l1,l2);
+        l1.printAgain();
+        l2.printAgain();
+        l3.printAgain();
+
     }
 }
