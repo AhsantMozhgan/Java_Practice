@@ -145,6 +145,23 @@ public class LinkedList {
         return l3;
     }
 
+    public static void what(Node p) {
+        if (p != null) {
+            what(p.next);
+            System.out.print(p.data + " ");
+            what(p.next);
+            System.out.print(p.data + " ");
+        }
+    }
+
+    public static void main(String[] args) {
+        LinkedList w = new LinkedList();
+        w.addLast(1);
+        w.addLast(2);
+        w.addLast(3);
+        what(w.first);
+    }
+
 
     public void print() {
         if (first == null) {
