@@ -31,11 +31,8 @@ public class Test {
         stack.push(4);
         stack.push(5);
         stack.push(6);
-
-
         System.out.println(stack.getSize());
         System.out.println(stack.getCapacity());
-
 
         while (!stack.isEmpty()) {
             int element = stack.pop();

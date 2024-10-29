@@ -28,7 +28,7 @@ public class Stack {
 //        if (top == s.length - 1) {
 //            throw new StackFullException();     // this class is defined on top
 //
-////            // if the stack is full add new cell and push item
+////            // if the stack is not full add new cell and push item
 ////            ++top;
 ////            s[top] = item;
 ////            // OR
@@ -36,7 +36,7 @@ public class Stack {
 ////            //s[top++] = item;      // incorrect
 //
 //        }
-//        // if the stack is full add new cell and push item
+//        // if the stack is not full add new cell and push item
 ////        ++top;
 ////        s[top] = item;
 //        // OR
@@ -61,10 +61,7 @@ public class Stack {
         if (top == -1) {
             throw new StackEmptyException();
         }
-//        --top;
-//        return s[top];
 
-        // OR
         return s[top--];
     }
 
@@ -80,10 +77,12 @@ public class Stack {
         return top == -1;       // if (top == -1) return true;
     }
 
+    // This method returns the current number of elements in the stack.
     public int getSize() {
         return top + 1;
     }
 
+    // This method returns the maximum number of elements the stack can hold.
     public int getCapacity() {
         return s.length;
     }
