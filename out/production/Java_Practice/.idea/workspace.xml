@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95326c6c-6013-434c-ab27-2777c3adf197" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/DataStructure/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructure/Queue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataStructure/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructure/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/DataStructure/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/DataStructure/Stack.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

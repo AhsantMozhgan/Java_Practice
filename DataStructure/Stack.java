@@ -103,3 +103,77 @@ public class Stack {
 //public class Stack<T> {
 //    private T s[];
 //}
+
+
+
+//// test for stack in Java Visualizer
+//public class CustomStack {
+//    private int[] stack;
+//    private int top;
+//
+//    // Default constructor
+//    public CustomStack() {
+//        this(10); // Call the other constructor with default size 10
+//    }
+//
+//    // Constructor with specified size
+//    public CustomStack(int size) {
+//        stack = new int[size];
+//        top = -1; // Initialize top to -1 (empty stack)
+//    }
+//
+//    // Method to add an item to the stack
+//    public void push(int item) {
+//        if (isFull()) {
+//            System.out.println("Stack is full!");
+//            return;
+//        }
+//        stack[++top] = item; // Increment top and add item
+//    }
+//
+//    // Method to remove and return an item from the stack
+//    public int pop() {
+//        if (isEmpty()) {
+//            System.out.println("Stack is empty!");
+//            return -1;
+//        }
+//        return stack[top--]; // Return item and decrement top
+//    }
+//
+//    // Check if the stack is empty
+//    public boolean isEmpty() {
+//        return top == -1;
+//    }
+//
+//    // Check if the stack is full
+//    public boolean isFull() {
+//        return top == stack.length - 1;
+//    }
+//
+//    // Get the current size of the stack
+//    public int size() {
+//        return top + 1;
+//    }
+//
+//    // Main method for testing
+//    public static void main(String[] args) {
+//        CustomStack s = new CustomStack(4);
+//        s.push(6);
+//        s.push(7);
+//        s.push(8);
+//
+//        System.out.println("First popped item is: " + s.pop());
+//        System.out.println("Second popped item is: " + s.pop());
+//        System.out.println("Third popped item is: " + s.pop());
+//        System.out.println("Fourth popped item is: " + s.pop());
+//        System.out.println("Fifth popped item is: " + s.pop());
+//
+////        First popped item is: 8
+////        Second popped item is: 7
+////        Third popped item is: 6
+////        Stack is empty!
+////        Fourth popped item is: -1
+////        Stack is empty!
+////        Fifth popped item is: -1
+//    }
+//}

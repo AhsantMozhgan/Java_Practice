@@ -73,3 +73,85 @@ public class Queue {
     }
 
 }
+
+
+//// test for queue in Java Visualizer
+//public class CustomQueue {
+//    private int queue[];  // Array to store queue elements
+//    private int f, r;     // f: front index, r: rear index
+//
+//    // Default constructor
+//    public CustomQueue() {
+//        this(10); // Call the other constructor with default size 10
+//    }
+//
+//    // Constructor with specified size
+//    public CustomQueue(int size) {
+//        queue = new int[size];
+//        f = r = 0;  // Initialize front and rear to 0
+//    }
+//
+//    // Method to add an item to the queue
+//    public void enqueue(int item) {
+//        // Check if queue is full
+//        if ((r + 1) % queue.length == f) {
+//            System.out.println("Queue is full!");
+//            return;
+//        }
+//
+//        queue[r] = item;  // Add item at rear
+//        r = (r + 1) % queue.length;  // Move rear to next position, wrap if necessary
+//    }
+//
+//    // Method to remove and return an item from the queue
+//    public int dequeue() {
+//        // Check if queue is empty
+//        if (r == f) {
+//            System.out.println("Queue is empty!");
+//            return -1;
+//        }
+//
+//        int item = queue[f];  // Get item at front
+//        f = (f + 1) % queue.length;  // Move front to next position, wrap if necessary
+//        return item;
+//    }
+//
+//    // Check if the queue is empty
+//    public boolean isEmpty() {
+//        return r == f;  // Queue is empty when front and rear are at same position
+//    }
+//
+//    // Check if the queue is full
+//    public boolean isFull() {
+//        return (r + 1) % queue.length == f;  // Queue is full when next rear position is front
+//    }
+//
+//    // Calculate the current size of the queue
+//    public int size() {
+//        return (r - f + queue.length) % queue.length;  // Calculate size considering wrap-around
+//    }
+//
+//    // Main method for testing
+//    public static void main(String[] args) {
+//        CustomQueue q = new CustomQueue(4);  // Create a queue of size 4
+//        q.enqueue(6);
+//        q.enqueue(7);
+//        q.enqueue(8);
+//
+//        // Dequeue and print items
+//        System.out.println("First dequeued item is: " + q.dequeue());
+//        System.out.println("Second dequeued item is: " + q.dequeue());
+//        System.out.println("Third dequeued item is: " + q.dequeue());
+//        System.out.println("Fourth dequeued item is: " + q.dequeue());  // This will be empty
+//        System.out.println("Fifth dequeued item is: " + q.dequeue());   // This will be empty too
+//
+//
+////        First dequeued item is: 6
+////        Second dequeued item is: 7
+////        Third dequeued item is: 8
+////        Queue is empty!
+////        Fourth dequeued item is: -1
+////        Queue is empty!
+////        Fifth dequeued item is: -1
+//    }
+//}
