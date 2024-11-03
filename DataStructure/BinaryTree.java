@@ -13,7 +13,7 @@ public class BinaryTree {
         }
 
         inorderPrint(r.leftChild);
-        System.out.println(" " + r.data );
+        System.out.print(" " + r.data );
         inorderPrint(r.rightChild);
     }
 

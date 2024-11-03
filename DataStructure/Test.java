@@ -1,5 +1,7 @@
 package DataStructure;
 
+import com.sun.source.tree.Tree;
+
 public class Test {
 //    static long fact(int n) {
 //        if (n == 0)
@@ -74,6 +76,23 @@ public class Test {
         l1.printAgain();
         l2.printAgain();
         l3.printAgain();
+
+
+        // test for TreeNode
+        System.out.print("test for TreeNode: ");
+        BinaryTree tree = new BinaryTree();
+        tree.root = new TreeNode(2);
+        TreeNode a = new TreeNode(3);
+        TreeNode b = new TreeNode(5);
+        TreeNode c = new TreeNode(7);
+        TreeNode d = new TreeNode(9);
+
+        tree.root.leftChild = a;
+        tree.root.rightChild = b;
+        b.leftChild = c;
+        b.rightChild = d;
+
+        tree.inorderPrint();
 
     }
 }
