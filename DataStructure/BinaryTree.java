@@ -33,6 +33,19 @@ public class BinaryTree {
         return  newRoot;
     }
 
+    private int getLeafNumbers(TreeNode r) {
+        if (r == null) {
+            return 0;
+        }
+        if (r.leftChild == null && r.rightChild == null) {
+            return  1;
+        }
+        int n1 = getLeafNumbers(r.leftChild);
+        int n2 = getLeafNumbers(r.rightChild);
+
+        return  n1 + n2;
+    }
+
     public boolean equals(BinaryTree tree) {
         return equals(root, tree.root);
     }
