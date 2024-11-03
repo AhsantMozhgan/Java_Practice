@@ -95,6 +95,20 @@ public class Test {
         b.rightChild = d;
 
         tree.inorderPrint();
+        System.out.println();
+
+        System.out.println("test for copy of BinaryTree (inorder): ");
+        BinaryTree tree2 = new BinaryTree(tree);
+        tree.inorderPrint();
+        System.out.println(" ");
+        tree2.inorderPrint();
+
+        System.out.println();
+        System.out.println("-----");
+        System.out.println("test for copy of BinaryTree (preorder): ");
+        tree.preorderPrint();
+        System.out.println("");
+        tree2.preorderPrint();
 
     }
 }

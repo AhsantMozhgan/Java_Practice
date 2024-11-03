@@ -7,9 +7,11 @@ public class BinaryTree {
         inorderPrint(root);
     }
 
+    public void preorderPrint() {
+        preorderPrint(root);
+    }
+
     // define default constructor
-
-
     public BinaryTree() {
     }
 
@@ -44,7 +46,7 @@ public class BinaryTree {
             return;
         }
 
-        System.out.println(" " + r.data );
+        System.out.print(" " + r.data );
         inorderPrint(r.leftChild);
         inorderPrint(r.rightChild);
     }
