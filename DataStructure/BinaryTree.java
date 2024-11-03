@@ -16,4 +16,14 @@ public class BinaryTree {
         System.out.println(" " + r.data );
         inorderPrint(r.rightChild);
     }
+
+    public void preorderPrint(TreeNode r) {
+        if (r == null) {
+            return;
+        }
+
+        System.out.println(" " + r.data );
+        inorderPrint(r.leftChild);
+        inorderPrint(r.rightChild);
+    }
 }
