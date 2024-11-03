@@ -33,6 +33,10 @@ public class BinaryTree {
         return  newRoot;
     }
 
+    public boolean equals(BinaryTree tree) {
+        return equals(root, tree.root);
+    }
+
     private static boolean equals(TreeNode r1, TreeNode r2) {
         if (r1 == null && r2 == null) {
             return  true;
