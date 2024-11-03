@@ -7,6 +7,16 @@ public class BinaryTree {
         inorderPrint(root);
     }
 
+    public TreeNode copy(TreeNode r) {
+        if (r == null) {
+            return null;
+        }
+        TreeNode newRoot = new TreeNode(r.data);
+        newRoot.leftChild = copy(r.leftChild);
+        newRoot.rightChild = copy(r.rightChild);
+        return  newRoot;
+    }
+
     public void inorderPrint(TreeNode r) {
         if (r == null) {
             return;
