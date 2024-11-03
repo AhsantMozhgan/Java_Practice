@@ -80,6 +80,8 @@ public class Test {
 
         // test for TreeNode
         System.out.print("test for TreeNode: ");
+        // in the Test class we need to define a default constructor
+
         BinaryTree tree = new BinaryTree();
         tree.root = new TreeNode(2);
         TreeNode a = new TreeNode(3);

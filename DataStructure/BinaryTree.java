@@ -7,7 +7,14 @@ public class BinaryTree {
         inorderPrint(root);
     }
 
+    // define default constructor
 
+
+    public BinaryTree() {
+    }
+
+    // in the Test class we have error because when we define constructor with one parameter, the default constructor will not be created for us.
+    // So we need to define a default constructor
     public BinaryTree(BinaryTree tree) {
         root = copy(tree.root);
     }
