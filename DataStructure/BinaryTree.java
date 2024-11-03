@@ -7,6 +7,11 @@ public class BinaryTree {
         inorderPrint(root);
     }
 
+
+    public BinaryTree(BinaryTree tree) {
+        root = copy(tree.root);
+    }
+
     public TreeNode copy(TreeNode r) {
         if (r == null) {
             return null;
