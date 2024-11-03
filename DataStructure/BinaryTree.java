@@ -1,5 +1,7 @@
 package DataStructure;
 
+import com.sun.source.tree.TreeVisitor;
+
 public class BinaryTree {
     TreeNode root;
 
@@ -29,6 +31,19 @@ public class BinaryTree {
         newRoot.leftChild = copy(r.leftChild);
         newRoot.rightChild = copy(r.rightChild);
         return  newRoot;
+    }
+
+    private static boolean equals(TreeNode r1, TreeNode r2) {
+        if (r1 == null && r2 == null) {
+            return  true;
+        }
+        if (r1 != null && r2 != null
+                && r1.data == r2.data
+                && equals(r1.leftChild, r2.leftChild)
+                &&equals(r1.rightChild, r2.rightChild)) {
+            return true;
+        }
+        return false;
     }
 
     public void inorderPrint(TreeNode r) {
