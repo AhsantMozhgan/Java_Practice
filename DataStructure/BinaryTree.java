@@ -46,6 +46,10 @@ public class BinaryTree {
         return  n1 + n2;
     }
 
+    public int getLeafNumbers() {
+        return getLeafNumbers(root);
+    }
+
     public boolean equals(BinaryTree tree) {
         return equals(root, tree.root);
     }

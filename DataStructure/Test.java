@@ -114,5 +114,8 @@ public class Test {
         System.out.println();
         System.out.println("test for private method of 'equals(TreeNode r1, TreeNode r2)': ");
         System.out.println(tree.equals(tree2));     // output: true
+
+        System.out.println("test for getLeafNumbers: ");
+        System.out.println(tree.getLeafNumbers());
     }
 }
