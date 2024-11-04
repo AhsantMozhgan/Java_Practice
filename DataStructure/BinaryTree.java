@@ -73,7 +73,7 @@ public class BinaryTree {
         }
 
         inorderPrint(r.leftChild);
-        System.out.print(" " + r.data );
+        System.out.print(r.data + " ");
         inorderPrint(r.rightChild);
     }
 
@@ -82,8 +82,18 @@ public class BinaryTree {
             return;
         }
 
-        System.out.print(" " + r.data );
-        inorderPrint(r.leftChild);
-        inorderPrint(r.rightChild);
+        System.out.print(r.data + " ");
+        preorderPrint(r.leftChild);
+        preorderPrint(r.rightChild);
     }
+
+//    public void postorderPrint(TreeNode r) {
+//        if (r == null) {
+//            return;
+//        }
+//
+//        postorderPrint(r.leftChild);
+//        postorderPrint(r.rightChild);
+//        System.out.print(r.data + " " );
+//    }
 }
