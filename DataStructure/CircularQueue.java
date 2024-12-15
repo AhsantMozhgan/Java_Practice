@@ -114,7 +114,7 @@ public class CircularQueue {
         queue = new int[size]; // Create an array of the specified size
         front = 0; // Initialize front pointer to the first index
         rear = 0; // Initialize rear pointer to the first index
-        isEmpty = true; // Initially, the queue is empty
+        isEmpty = true; // use a separate flag (boolean isEmpty) to explicitly track whether the queue is empty
     }
 
     // Method to check if the queue is empty
@@ -122,7 +122,14 @@ public class CircularQueue {
         return isEmpty; // Return the value of the isEmpty flag
     }
 
-    // Method to check if the queue is full
+     // Or, alternatively, The queue is empty when front == rear and no elements have been added yet.
+
+//     public boolean isEmpty() {
+//         return front == rear && queue[front] == 0; // Assuming 0 indicates no value has been enqueued
+//     }
+
+
+     // Method to check if the queue is full
     public boolean isFull() {
         // The queue is full if incrementing rear would make it equal to front
         return (rear + 1) % queue.length == front;
