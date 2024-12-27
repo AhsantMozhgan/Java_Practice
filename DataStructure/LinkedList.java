@@ -7,6 +7,12 @@ public class LinkedList {
     // we do not write constructor here because 'first' and 'size' have their default value
     // we use constructor if we want to use any value except default value
 
+    public LinkedList() {
+        this.first = null;
+        this.size = 0;
+
+    }
+
     public void addFirst(int element) {
         // we do not use exception here because we do not have problem for being linedList full
         // but in the array we used exception because we had problem for being Array full
@@ -75,12 +81,12 @@ public class LinkedList {
             throw new ListEmptyException();
         }
         // check if this code works for a list with one node or not
-        if (first.next == null) {
-            int data = first.data;
-            first = null;
-            size--;
-            return data;
-        }
+//        if (first.next == null) {
+//            int data = first.data;
+//            first = null;
+//            size--;
+//            return data;
+//        }
 
 
         // first of all we need to keep data (int data = first.data;) and then (first = first.next;)
