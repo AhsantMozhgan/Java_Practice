@@ -171,12 +171,32 @@ public class LinkedList {
 
     public static void main(String[] args) {
         LinkedList w = new LinkedList();
+
+        // Test adding elements using addLast
+        System.out.println("Adding elements to the end of the list:");
         w.addLast(1);
         w.addLast(2);
         w.addLast(3);
-        w.print();
-        w.printReverse(); // Demonstrates the reverse print functionality
+        w.print(); // Expected: LinkedList: 1 -> 2 -> 3, Size: 3
+
+        // Test adding elements at specific indexes using add
+        System.out.println("\nAdding element at the beginning of the list:");
+        w.add(0, 0); // Add 0 at the beginning
+        w.print(); // Expected: LinkedList: 0 -> 1 -> 2 -> 3, Size: 4
+
+        System.out.println("\nAdding element in the middle of the list:");
+        w.add(2, 5); // Add 5 at index 2
+        w.print(); // Expected: LinkedList: 0 -> 1 -> 5 -> 2 -> 3, Size: 5
+
+        System.out.println("\nAdding element at the end of the list:");
+        w.add(5, 10); // Add 10 at the end
+        w.print(); // Expected: LinkedList: 0 -> 1 -> 5 -> 2 -> 3 -> 10, Size: 6
+
+        // Test reverse printing
+        System.out.println("\nPrinting the list in reverse:");
+        w.printReverse(); // Expected: [10 3 2 5 1 0]
     }
+
 }
 
 class ListEmptyException extends Exception {
