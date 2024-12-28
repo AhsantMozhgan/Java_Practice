@@ -169,7 +169,7 @@ public class LinkedList {
         System.out.println();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         LinkedList w = new LinkedList();
 
         // Test adding elements using addLast
@@ -195,6 +195,19 @@ public class LinkedList {
         // Test reverse printing
         System.out.println("\nPrinting the list in reverse:");
         w.printReverse(); // Expected: [10 3 2 5 1 0]
+
+        System.out.println("\nRemoving the first element:");
+        System.out.println("Removed element: " + w.removeFirst()); // Expected: 0
+        w.print(); // Expected: LinkedList: 1 -> 5 -> 2 -> 3 -> 10, Size: 5
+
+        System.out.println("\nRemoving the last element:");
+        System.out.println("Removed element: " + w.removeLast()); // Expected: 10
+        w.print(); // Expected: LinkedList: 1 -> 5 -> 2 -> 3, Size: 4
+
+        System.out.println("\nRemoving element at index 2:");
+        System.out.println("Removed element: " + w.remove(2)); // Expected: 2
+        w.print(); // Expected: LinkedList: 1 -> 5 -> 3, Size: 3
+
     }
 
 }
