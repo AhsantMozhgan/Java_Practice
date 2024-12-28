@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95326c6c-6013-434c-ab27-2777c3adf197" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Practice/DataStructure/CircularQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Practice/DataStructure/CircularQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructure/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructure/LinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
