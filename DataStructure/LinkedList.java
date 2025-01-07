@@ -138,6 +138,31 @@ public class LinkedList {
         return l3;
     }
 
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    // demonstrate the mergeWithOutNewList method without creating any new list
+    public static LinkedList mergeWithOutNewList(LinkedList l1, LinkedList l2) {
+        if (l1.isEmpty()) {
+            l1.first = l2.first;
+            l1.size = l2.size;
+        } else if (!l2.isEmpty()) {
+            Node last = l1.first;
+            while (last.next != null) {
+                last = last.next;
+            }
+
+            last.next = l2.first;
+            l1.size += l2.size;
+        }
+        l2.first = null;
+        l2.size = 0;
+        return l1;
+    }
+
+
+
     // Prints the list in a detailed format
 //    public void print() {
 //        if (first == null) {
@@ -208,233 +233,32 @@ public class LinkedList {
         System.out.println("Removed element: " + w.remove(2)); // Expected: 2
         w.print(); // Expected: LinkedList: 1 -> 5 -> 3, Size: 3
 
+//        print mergeWithOutNewList
+        System.out.println("\nTesting mergeWithOutNewList:");
+        LinkedList  l1 = new LinkedList();
+        l1.addLast(2);
+        l1.addLast(3);
+        System.out.print("l1 before merge: ");
+        l1.print();
+
+        LinkedList l2 = new LinkedList();
+        l2.addLast(22);
+        l2.addLast(33);
+        l2.addLast(44);
+        System.out.print("l2 before merge: ");
+        l2.print();
+
+        System.out.print("\nAfter merge: ");
+        LinkedList.mergeWithOutNewList(l1, l2);
+        l1.print();
+
+        System.out.print("\nl2 after merge (should be empty): ");
+        l2.print();
+
+
     }
 
 }
 
 class ListEmptyException extends Exception {
 }
-
-
-
-
-//package DataStructure;
-//
-//public class LinkedList {
-//    private Node first;
-//    private int size;
-//    // we do not need to write constructor because 'first' node does not refer to any node and 'size' has zero value
-//    // we do not write constructor here because 'first' and 'size' have their default value
-//    // we use constructor if we want to use any value except default value
-//
-//    public LinkedList() {
-//        this.first = null;
-//        this.size = 0;
-//
-//    }
-//
-//    public void addFirst(int element) {
-//        // we do not use exception here because we do not have problem for being linedList full
-//        // but in the array we used exception because we had problem for being Array full
-//        // addFirst has O(1)
-//        Node newNode = new Node(element);
-//        newNode.next = first;
-//
-//        first = newNode;
-//
-//        size++;
-//    }
-//
-//    public void addLast(int element) {
-//        Node newNode = new Node(element);
-//
-//        if (first == null) {
-//            first = newNode;
-//            size++;
-//            return;
-//        }
-//
-//        // last node points to the first node
-//        Node last = first;
-//
-//        while (last.next != null) {
-//            // To refer one node to another node we write: oneNode = anotherNode.next;
-//            last = last.next;
-//        }
-//        last.next = newNode;
-//
-//        size++;
-//    }
-//
-//    public void add(int index, int element) {
-//        if (index < 0 || index > size) {
-//            throw new IndexOutOfBoundsException();
-//        }
-//        // add element in first index
-//        if (index == 0) {
-//            addFirst(element);
-//            return;
-//        }
-//
-//        // add element in last index
-//        if (index == size) {
-//            addLast(element);
-//            return;
-//        }
-//
-//        // add element between first index and last index
-//        Node previous = first;
-//        // for (int i = 1; i < index; i++) {
-//        // OR
-//        for (int i = 1; i <= index - 1; i++) {
-//            previous = previous.next;
-//        }
-//        Node newNode = new Node(element);
-//        newNode.next = previous.next;
-//        previous.next = newNode;
-//
-//        size++;
-//    }
-//
-//    public int removeFirst() throws ListEmptyException {
-//        if (first == null) {
-//            throw new ListEmptyException();
-//        }
-//        // check if this code works for a list with one node or not
-////        if (first.next == null) {
-////            int data = first.data;
-////            first = null;
-////            size--;
-////            return data;
-////        }
-//
-//
-//        // first of all we need to keep data (int data = first.data;) and then (first = first.next;)
-//        int data = first.data;
-//        first = first.next;
-//        size--;     // don't forget to reduce size in the removeFirst() method
-//        return data;
-//    }
-//
-//    public int removeLast() throws ListEmptyException {
-//        // in every data structure first check being full or empty when removing
-//        if (first == null) {
-//            throw new ListEmptyException();
-//        }
-//        Node p = first;
-//        while (p.next.next != null) {    // condition : when p.next.next is not the last node
-//            p = p.next;
-//        }
-//        int data = p.next.data;
-//        p.next = null;  // removing the last node
-//        size--;
-//        return data;
-//    }
-//
-//    // remove element from the desired location
-//    public int remove(int index) throws Exception{
-//        if (index < 0 || index >= size) {
-//            throw new IndexOutOfBoundsException();
-//        }
-//        if (index == 0) {
-//            return removeFirst();
-//        }
-//        if (index == size - 1) {
-//            return removeLast();
-//        }
-//
-//        Node p = first;
-//        for (int i = 1; i <= index - 1; i++) {
-//            p = p.next;
-//        }
-//        int data = p.next.data;         // OR 'Node current = p.next;'      int data = current.data;
-//        p.next = p.next.next;           // OR 'p.next = current.next;'
-//        size--;
-//        return data;
-//    }
-//
-//    private void printReverseRecursive(Node node) {
-//        if (node == null) {
-//            return;
-//        }
-//        printReverseRecursive(node.next);
-//        System.out.print(node.data + " ");
-//    }
-//
-//    public void printReverse() {
-//        System.out.print("[");
-//        printReverseRecursive(first);
-//        System.out.print("]");
-//    }
-//
-//    // write a static method that receive 2 arranged list of numbers and merge them in a way that the new list be arranged
-//    public static LinkedList merge(LinkedList l1, LinkedList l2) {
-//        LinkedList l3 = new LinkedList();
-//        Node p = l1.first;
-//        while (p != null) {
-//            l3.addLast(p.data);
-//            p = p.next;
-//        }
-//
-//        p = l2.first;
-//        while (p != null) {
-//            l3.addLast(p.data);
-//            p = p.next;
-//        }
-//
-//        return l3;
-//    }
-//
-//    public static void what(Node p) {
-//        if (p != null) {
-//            what(p.next);
-//            System.out.print(p.data + " ");
-//            what(p.next);
-//            System.out.print(p.data + " ");
-//        }
-//    }
-//
-//    public static void main(String[] args) {
-//        LinkedList w = new LinkedList();
-//        w.addLast(1);
-//        w.addLast(2);
-//        w.addLast(3);
-//        what(w.first);
-//    }
-//
-//
-//    public void print() {
-//        if (first == null) {
-//            System.out.println("The list is empty.");
-//            return;
-//        }
-//
-//        Node current = first;
-//        System.out.print("LinkedList: ");
-//        while (current != null) {
-//            System.out.print(current.data);
-//            if (current.next != null) {
-//                System.out.print(" -> ");
-//            }
-//            current = current.next;
-//        }
-//        System.out.println("\nSize: " + size);
-//    }
-//
-//    public void printAgain() {
-//        // using current node to check do we reached to the end of the linked-list or not
-//        Node current = first;
-//        System.out.print("[");
-//        while (current != null) {
-//            System.out.print(current.data + " ");
-//            current = current.next;
-//        }
-//        System.out.print("]");
-//        System.out.println();
-//    }
-//
-//}
-//class ListEmptyException extends Exception {
-//}
-
-
