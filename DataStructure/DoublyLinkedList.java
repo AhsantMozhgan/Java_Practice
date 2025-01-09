@@ -2,6 +2,8 @@ package DataStructure;
 
 import jdk.jshell.spi.SPIResolutionException;
 
+import java.util.concurrent.atomic.DoubleAccumulator;
+
 public class DoublyLinkedList {
     private Node first;
     private Node last;
@@ -97,6 +99,40 @@ public class DoublyLinkedList {
 //        size++;
     }
 
+
+    public int removeFirst() {
+        if(isEmpty()) {
+            System.out.println("list is empty!");
+            return -1;
+        }
+        int data = first.data;
+        first = first.next;
+        if (first == null) {
+            last = null;
+        }
+        else {
+            first.prev = null;
+        }
+        size--;
+        return data;
+    }
+
+    public  int removeLast() {
+        if (isEmpty()) {
+            System.out.println("list is empty!");
+            return -1;
+        }
+        int data = last.data;
+        last = last.prev;
+        if(last == null) {
+            last = null;
+        } else {
+            last.next = null;
+        }
+        size--;
+        return data;
+    }
+
     public void print() {
         System.out.print("[");
         Node current = first;
@@ -116,8 +152,7 @@ public class DoublyLinkedList {
         }
         list.addLast(100);
         list.add(1, 222);
+        list.removeLast();
         list.print();
-
     }
-
 }
