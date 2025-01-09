@@ -133,6 +133,32 @@ public class DoublyLinkedList {
         return data;
     }
 
+    public int remove(int index) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException();
+        }
+        if (index == 0) {
+            return removeFirst();
+        }
+        if (index == size -1) {
+            return removeLast();
+        }
+
+        Node current = first;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        int data = current.data;
+        current.prev.next = current.next;
+        current.next.prev = current.prev;
+
+        size--;
+        return data;
+
+
+
+    }
+
     public void print() {
         System.out.print("[");
         Node current = first;
@@ -152,7 +178,9 @@ public class DoublyLinkedList {
         }
         list.addLast(100);
         list.add(1, 222);
+        list.removeFirst();
         list.removeLast();
+        list.remove(2);
         list.print();
     }
 }
