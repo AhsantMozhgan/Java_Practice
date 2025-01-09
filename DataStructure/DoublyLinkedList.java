@@ -1,5 +1,7 @@
 package DataStructure;
 
+import jdk.jshell.spi.SPIResolutionException;
+
 public class DoublyLinkedList {
     private Node first;
     private Node last;
@@ -41,6 +43,19 @@ public class DoublyLinkedList {
             first = newNode;
         }
         size++;
+    }
+
+
+    public void addLast(int element) {
+        if(isEmpty()) {
+            addFirst(element);
+            return;
+        }
+        Node newNode = new Node(element);
+        last.next = newNode;
+        newNode.prev = last;
+        last = newNode;
+        size--;
 
     }
 
@@ -61,6 +76,7 @@ public class DoublyLinkedList {
         for (int i = 30; i >= 5; i-=5) {
             list.addFirst(i);
         }
+        list.addLast(100);
         list.print();
 
     }
