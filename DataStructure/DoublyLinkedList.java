@@ -56,7 +56,45 @@ public class DoublyLinkedList {
         newNode.prev = last;
         last = newNode;
         size--;
+    }
 
+    public void add(int index, int element) {
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException();
+        }
+
+        if (index == 0) {
+            addFirst(element);
+            return;
+        }
+
+        if (index == size -1) {
+            addLast(element);
+            return;
+        }
+
+        Node current = first;
+        for (int i = 0; i < index - 1; i++) {
+            current = current.next;
+        }
+        Node newNode = new Node(element);
+        newNode.prev = current;
+        newNode.next = current.next;
+        current.next.prev = newNode;
+        current.next = newNode;
+        size++;
+
+
+//         OR
+//        for (int i = 0; i < index; i++) {
+//            current = current.next;
+//        }
+//        Node newNode = new Node(element);
+//        newNode.prev = current.prev;
+//        newNode.next = current;
+//        current.prev.next = newNode;
+//        current.prev = newNode;
+//        size++;
     }
 
     public void print() {
@@ -77,6 +115,7 @@ public class DoublyLinkedList {
             list.addFirst(i);
         }
         list.addLast(100);
+        list.add(1, 222);
         list.print();
 
     }
